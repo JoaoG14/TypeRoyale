@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #070707;
+}
+
+body {
+  overflow: hidden;
+}
+
+li,
+a,
+button {
+  font-weight: 400;
+  font-size: 18px;
+  color: #929090;
+  text-decoration: none;
+}
+
+li {
+  align-items: center;
+}
+
+.login {
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 90px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0px 27px;
+}
+
+.navbar li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+  color: white;
+}
+
+#account {
+  width: 243px;
+  text-align: right;
+}
+
+button {
+  padding: 7px 23px;
+  background-color: #32f4a6;
+  transition: ease 0s;
+}
+
+button:hover {
+  background-color: #22e496;
+}
+
+.cta {
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login {
+  margin: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.login:hover {
+  color: white;
+}
+
+#multiplayer {
+  padding: 20;
+}
+
+.key {
+  width: 59.144px;
+  height: 59.144px;
+  margin: 2px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  border-radius: 10px;
+  border: 1.5px solid #5b5b5b;
+}
+
+.key span {
+  color: #5b5b5b;
+  display: block;
+
+  margin: 10px 10px 10px 10px;
+  padding: 5px 10px;
+}
+
+#spacebar span {
+  color: #5b5b5b;
+}
+
+#keyrow1 {
+  margin: 4px;
+  padding: 0px;
+  text-align: center;
+}
+
+#keyrow2 {
+  margin: 4px;
+  padding: 0px;
+  text-align: center;
+}
+
+#keyrow3 {
+  margin: 4px;
+  padding: 0px;
+  text-align: center;
+}
+
+#keyrow4 {
+  margin: 4px;
+  padding: 0px;
+  text-align: center;
+}
+
+#keyboard {
+  margin: 100px;
+}
+
+#spacebar {
+  width: 486.579px;
+  height: 58.775px;
+
+  border-radius: 10px;
+  border: 1px solid #5b5b5b;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#quoteDisplay {
+  color: white;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+
+  width: 967px;
+  height: 126px;
+  flex-shrink: 0;
+
+  display: inline-block;
+}
+
