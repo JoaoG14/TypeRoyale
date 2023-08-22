@@ -12,6 +12,8 @@ main {
   overflow: hidden;
 }
 
+
+
 li,
 a,
 button {
@@ -216,5 +218,6 @@ button:hover {
 }
 
 textarea {
-  color: rgba(0, 0, 0, 0);
+  
+  opacity: 0;
 }
