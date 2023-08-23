@@ -266,9 +266,13 @@ textarea {
   color: #FF4141;
   
 }
-.typing-text p span.active{
-  color: #ffffff;
+
+@keyframes blink{
+  50%{ 
+    opacity: 1; 
+  }
 }
+
 .typing-text p span.active::before{
   position: absolute;
   content: "";
@@ -278,7 +282,7 @@ textarea {
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #32F4A6;
   animation: blink 1s ease-in-out infinite;
 }
 
@@ -405,6 +409,7 @@ u.result-details {
 
 #timer {
   margin: 0;
+  
 }
 
 #typingViewf {
@@ -421,6 +426,7 @@ u.result-details {
 
 #tryAgain {
   width: 930px;
+  color: rgb(153, 153, 153);
 }
 
 .content {
@@ -433,4 +439,10 @@ u.result-details {
 
 .wpm {
   color: white;
+  
 }
+
+.wrapper {
+  margin-top: 70px;
+}
+
