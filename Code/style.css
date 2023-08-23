@@ -223,8 +223,8 @@ textarea {
 }
 
 ::selection{
-  color: #fff;
-  background: #17A2B8;
+  color: #000000;
+  background: #ffffff;
 }
 .wrapper{
   width: 770px;
