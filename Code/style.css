@@ -12,8 +12,6 @@ main {
   overflow: hidden;
 }
 
-
-
 li,
 a,
 button {
@@ -149,7 +147,7 @@ button:hover {
 }
 
 #keyboard {
-  margin: 100px;
+  margin: 0px;
 }
 
 #spacebar {
@@ -218,6 +216,221 @@ button:hover {
 }
 
 textarea {
-  
+  color: rgba(0, 0, 0, 0);
+  z-index: -999;
   opacity: 0;
+  
+}
+
+::selection{
+  color: #fff;
+  background: #17A2B8;
+}
+.wrapper{
+  width: 770px;
+  padding: 35px;
+  
+  
+  
+}
+.wrapper .input-field{
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+}
+.wrapper .content-box{
+  padding: 13px 0px 0;
+  border-radius: 10px;
+  
+}
+.content-box .typing-text{
+  overflow: hidden;
+  max-height: 256px;
+}
+.typing-text::-webkit-scrollbar{
+  width: 0;
+}
+.typing-text p{
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-break: keep-all;
+}
+.typing-text p span{
+  position: relative;
+}
+.typing-text p span.correct{
+  color: #32F4A6;
+}
+.typing-text p span.incorrect{
+  color: #FF4141;
+  
+}
+.typing-text p span.active{
+  color: #ffffff;
+}
+.typing-text p span.active::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  background: #17A2B8;
+  animation: blink 1s ease-in-out infinite;
+}
+
+.content-box .content{
+  margin-top: 17px;
+  display: flex;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.content button{
+  outline: none;
+  border: none;
+  width: 930px;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;
+  
+}
+.content button:active{
+  transform: scale(0.97);
+}
+.content .result-details{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  justify-content: space-between;
+}
+.result-details li{
+  display: flex;
+  height: 20px;
+  list-style: none;
+  position: relative;
+  align-items: center;
+}
+.result-details li:not(:first-child){
+  padding-left: 22px;
+  
+}
+.result-details li p{
+  font-size: 19px;
+}
+.result-details li span{
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+li span b{
+  font-weight: 500;
+}
+
+li.time {
+  padding: 0px 0px;
+  left: 0;
+  margin: 0;
+}
+
+li:not(:first-child) span{
+  font-weight: 500;
+}
+@media (max-width: 745px) {
+  .wrapper{
+    padding: 20px;
+  }
+  .content-box .content{
+    padding: 20px 0;
+  }
+  .content-box .typing-text{
+    max-height: 100%;
+  }
+  .typing-text p{
+    font-size: 19px;
+    text-align: left;
+  }
+  .content button{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  .content .result-details{
+    width: 100%;
+  }
+  .result-details li:not(:first-child){
+    border-left: 0;
+    padding: 0;
+  }
+  .result-details li p, 
+  .result-details li span{
+    font-size: 17px;
+  }
+}
+@media (max-width: 518px) {
+  .wrapper .content-box{
+    padding: 10px 15px 0;
+  }
+  .typing-text p{
+    font-size: 18px;
+  }
+  .result-details li{
+    margin-bottom: 10px;
+  }
+  .content button{
+    margin-top: 10px;
+  }
+}
+
+u.result-details {
+  margin-right: 20px;
+}
+
+
+.content {
+  width: 700px;
+  
+}
+
+#timer {
+  margin: 0;
+}
+
+#typingViewf {
+  width: 900px;
+}
+
+.wrapper {
+  width: 1000px;
+}
+
+.result-details {
+  width: 930px;
+}
+
+#tryAgain {
+  width: 930px;
+}
+
+.content {
+  width: 930px;
+}
+
+#timer {
+  color: white;
+}
+
+.wpm {
+  color: white;
 }

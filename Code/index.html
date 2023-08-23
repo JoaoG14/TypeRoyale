@@ -50,14 +50,36 @@
     </header>
 
     <main>
-
       <div id="quoteSection">
-        <div class="container">
-          <div class="quote-display" id="quoteDisplay"></div>
-          <textarea id="quoteInput" class="quote-input" style="overflow:hidden" autofocus></textarea>
+        <div class="wrapper">
+
+          <div class="content">
+            <ul class="result-details">
+              <li class="time">
+                
+                <span id="timer"><b>15</b>s</span>
+              </li>
+              
+              <li class="wpm">
+                <p></p>
+                <span class="wpm">0</span>
+              </li>
+              
+            </ul>
+          </div>
+
+          <input type="text" class="input-field" />
+          <div class="content-box">
+            <div class="typing-text">
+              <p id="typingView"></p>
+            </div>
+            <div class="content">
+              
+              <button id="tryAgain">Try Again</button>
+            </div>
+          </div>
         </div>
       </div>
-      
 
       <div id="keyboard">
         <div id="keyrow1">
@@ -73,7 +95,7 @@
           <div class="key"><span>P</span></div>
           <div class="key"><span>🡠</span></div>
         </div>
-    
+
         <div id="keyrow2">
           <div class="key"><span>A</span></div>
           <div class="key"><span>S</span></div>
@@ -86,7 +108,7 @@
           <div class="key"><span>L</span></div>
           <div class="key"><span>;</span></div>
         </div>
-    
+
         <div id="keyrow3">
           <div class="key"><span>Z</span></div>
           <div class="key"><span>X</span></div>
@@ -98,14 +120,16 @@
           <div class="key"><span>,</span></div>
           <div class="key"><span>.</span></div>
         </div>
-    
+
         <div id="keyrow4">
           <div id="spacebar"><span>⸺⸺</span></div>
         </div>
       </div>
-
     </main>
 
     <footer></footer>
+
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
