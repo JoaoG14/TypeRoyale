@@ -239,7 +239,7 @@ textarea {
   position: absolute;
 }
 .wrapper .content-box{
-  padding: 13px 0px 0;
+  padding: 20px 0px 0;
   border-radius: 10px;
   
 }
@@ -443,6 +443,6 @@ u.result-details {
 }
 
 .wrapper {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
