@@ -8,7 +8,7 @@
   background-color: #070707;
 
   /*blocks selection*/
-  
+
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -453,7 +453,7 @@ background: #32F4A6;
 text-align: center;
 justify-content: center;
 display: inline;
-padding: 7px 30px;
+padding: 8.5px 30px;
 }
 
 #backswitch {
@@ -484,6 +484,13 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
+transition: all 0.3s ease 0s;
+
+}
+
+.multiplayer:hover {
+  color: white;
 }
 
 .wpm {
