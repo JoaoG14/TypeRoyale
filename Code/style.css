@@ -6,6 +6,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: #070707;
+
+  /*blocks selection*/
+  
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 main {
@@ -480,4 +486,6 @@ font-weight: 400;
 line-height: normal;
 }
 
-
+.wpm {
+  color: rgba(0, 0, 0, 0);
+}
