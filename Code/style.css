@@ -219,61 +219,55 @@ textarea {
   color: rgba(0, 0, 0, 0);
   z-index: -999;
   opacity: 0;
-  
 }
 
-::selection{
+::selection {
   color: #000000;
   background: #ffffff;
 }
-.wrapper{
+.wrapper {
   width: 770px;
-  padding: 35px;
-  
-  
-  
+  padding: 29px;
 }
-.wrapper .input-field{
+.wrapper .input-field {
   opacity: 0;
   z-index: -999;
   position: absolute;
 }
-.wrapper .content-box{
+.wrapper .content-box {
   padding: 20px 0px 0;
   border-radius: 10px;
-  
 }
-.content-box .typing-text{
+.content-box .typing-text {
   overflow: hidden;
   max-height: 256px;
 }
-.typing-text::-webkit-scrollbar{
+.typing-text::-webkit-scrollbar {
   width: 0;
 }
-.typing-text p{
+.typing-text p {
   font-size: 21px;
   text-align: justify;
   letter-spacing: 1px;
   word-break: keep-all;
 }
-.typing-text p span{
+.typing-text p span {
   position: relative;
 }
-.typing-text p span.correct{
-  color: #32F4A6;
+.typing-text p span.correct {
+  color: #32f4a6;
 }
-.typing-text p span.incorrect{
-  color: #FF4141;
-  
+.typing-text p span.incorrect {
+  color: #ff4141;
 }
 
-@keyframes blink{
-  50%{ 
-    opacity: 1; 
+@keyframes blink {
+  50% {
+    opacity: 1;
   }
 }
 
-.typing-text p span.active::before{
+.typing-text p span.active::before {
   position: absolute;
   content: "";
   height: 2px;
@@ -282,20 +276,19 @@ textarea {
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #32F4A6;
+  background: #32f4a6;
   animation: blink 1s ease-in-out infinite;
 }
 
-.content-box .content{
+.content-box .content {
   margin-top: 17px;
   display: flex;
   padding: 12px 0;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
 }
-.content button{
+.content button {
   outline: none;
   border: none;
   width: 930px;
@@ -306,38 +299,36 @@ textarea {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0);
   transition: transform 0.3s ease;
-  
 }
-.content button:active{
+.content button:active {
   transform: scale(0.97);
 }
-.content .result-details{
+.content .result-details {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  
+
   justify-content: space-between;
 }
-.result-details li{
+.result-details li {
   display: flex;
   height: 20px;
   list-style: none;
   position: relative;
   align-items: center;
 }
-.result-details li:not(:first-child){
+.result-details li:not(:first-child) {
   padding-left: 22px;
-  
 }
-.result-details li p{
+.result-details li p {
   font-size: 19px;
 }
-.result-details li span{
+.result-details li span {
   display: block;
   font-size: 20px;
   margin-left: 10px;
 }
-li span b{
+li span b {
   font-weight: 500;
 }
 
@@ -347,52 +338,52 @@ li.time {
   margin: 0;
 }
 
-li:not(:first-child) span{
+li:not(:first-child) span {
   font-weight: 500;
 }
 @media (max-width: 745px) {
-  .wrapper{
+  .wrapper {
     padding: 20px;
   }
-  .content-box .content{
+  .content-box .content {
     padding: 20px 0;
   }
-  .content-box .typing-text{
+  .content-box .typing-text {
     max-height: 100%;
   }
-  .typing-text p{
+  .typing-text p {
     font-size: 19px;
     text-align: left;
   }
-  .content button{
+  .content button {
     width: 100%;
     font-size: 15px;
     padding: 10px 0;
     margin-top: 20px;
   }
-  .content .result-details{
+  .content .result-details {
     width: 100%;
   }
-  .result-details li:not(:first-child){
+  .result-details li:not(:first-child) {
     border-left: 0;
     padding: 0;
   }
-  .result-details li p, 
-  .result-details li span{
+  .result-details li p,
+  .result-details li span {
     font-size: 17px;
   }
 }
 @media (max-width: 518px) {
-  .wrapper .content-box{
+  .wrapper .content-box {
     padding: 10px 15px 0;
   }
-  .typing-text p{
+  .typing-text p {
     font-size: 18px;
   }
-  .result-details li{
+  .result-details li {
     margin-bottom: 10px;
   }
-  .content button{
+  .content button {
     margin-top: 10px;
   }
 }
@@ -401,15 +392,12 @@ u.result-details {
   margin-right: 20px;
 }
 
-
 .content {
   width: 700px;
-  
 }
 
 #timer {
   margin: 0;
-  
 }
 
 #typingViewf {
@@ -437,12 +425,59 @@ u.result-details {
   color: white;
 }
 
-.wpm {
-  color: white;
-  
-}
-
 .wrapper {
   margin-top: 60px;
 }
+
+#track {
+  width: 280px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+background: #212121;
+  
+}
+
+#switch {
+  width: 140px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 9px;
+background: #32F4A6;
+text-align: center;
+justify-content: center;
+display: inline;
+padding: 7px 30px;
+}
+
+#backswitch {
+  display: inline;
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.practice {
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+  line-height: 40px;
+  color: #070707;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+  
+  
+}
+
+.multiplayer {
+  
+  background-color: rgba(0, 0, 0, 0);
+  color: #929090;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 
