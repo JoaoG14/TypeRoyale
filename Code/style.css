@@ -37,15 +37,15 @@ span {
   text-align: center;
 }
 
-.login {
-  margin: 10px;
-}
+
+
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 90px;
+  padding: 35px 200px;
+  padding-bottom: 0;
 }
 
 .navbar {
@@ -90,13 +90,18 @@ button:hover {
   cursor: pointer;
 }
 
-.login {
+.about {
   margin: 20px;
   transition: all 0.3s ease 0s;
+  padding: 0px 10px;
+  margin: 10px;
+  color: white;
 }
 
-.login:hover {
-  color: white;
+.about:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 9px;
 }
 
 #multiplayer {
@@ -210,15 +215,6 @@ button:hover {
 
 .quote-input:focus {
   border-color: white;
-}
-
-.correct {
-  color: green;
-}
-
-.incorrect {
-  color: red;
-  text-decoration: underline;
 }
 
 textarea {
@@ -432,33 +428,40 @@ u.result-details {
 }
 
 .wrapper {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
+
+
+
 #track {
-  width: 280px;
+  width: 260px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 9px;
-background: #212121;
+  background: #212121;
+  margin-top: 30px;
+  margin-left: 42.5%;
+  
+  
   
 }
 
 #switch {
   width: 140px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 9px;
-background: #32F4A6;
-text-align: center;
-justify-content: center;
-display: inline;
-padding: 8.5px 30px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #ffffff;
+  text-align: center;
+  justify-content: center;
+  display: inline;
+  padding: 8.5px 30px;
 }
 
 #backswitch {
   display: inline;
-  padding: 18px;
+  padding: 0px 18px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -467,26 +470,22 @@ padding: 8.5px 30px;
   color: #000000;
   line-height: 40px;
   color: #070707;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-  
-  
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .multiplayer {
-  
   background-color: rgba(0, 0, 0, 0);
   color: #929090;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
-transition: all 0.3s ease 0s;
-
+  transition: all 0.3s ease 0s;
 }
 
 .multiplayer:hover {
