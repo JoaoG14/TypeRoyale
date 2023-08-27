@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
   background-color: #070707;
 
-  /*blocks selection*/
+  /*block the selection*/
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -36,9 +36,6 @@ span {
   font-size: 25px;
   text-align: center;
 }
-
-
-
 
 header {
   display: flex;
@@ -96,12 +93,21 @@ button:hover {
   padding: 0px 10px;
   margin: 10px;
   color: white;
+  font-size: 16px;
 }
 
 .about:hover {
   color: rgb(0, 0, 0);
   background-color: white;
   border-radius: 9px;
+}
+
+#tryAgain:hover {
+  color: white;
+}
+
+#tryAgain {
+  transition: all 0.3s ease 0s;
 }
 
 #multiplayer {
@@ -431,9 +437,6 @@ u.result-details {
   margin-top: 30px;
 }
 
-
-
-
 #track {
   width: 260px;
   height: 40px;
@@ -442,9 +445,6 @@ u.result-details {
   background: #212121;
   margin-top: 30px;
   margin-left: 42.5%;
-  
-  
-  
 }
 
 #switch {
