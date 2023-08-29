@@ -92,7 +92,7 @@ button:hover {
   transition: all 0.3s ease 0s;
   padding: 0px 10px;
   margin: 10px;
-  color: white;
+  color: rgb(226, 226, 226);
   font-size: 16px;
 }
 
@@ -421,6 +421,7 @@ u.result-details {
 }
 
 #tryAgain {
+  
   width: 930px;
   color: rgb(153, 153, 153);
 }
