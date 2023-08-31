@@ -434,7 +434,8 @@ u.result-details {
 }
 
 .wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #track {
@@ -443,7 +444,7 @@ u.result-details {
   flex-shrink: 0;
   border-radius: 9px;
   background: #212121;
-  margin-top: 30px;
+  margin-top: 100px;
   display: inline-block;
 }
 
@@ -519,7 +520,7 @@ u.result-details {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 200px 700px 50px;
+  padding: 200px 500px 50px;
   
   text-align:  center;
 }
@@ -554,3 +555,11 @@ u.result-details {
   color: white;
 }
 
+img {
+  background: none
+}
+
+#bmc-wbtn {
+  margin: 0px;
+  
+}
