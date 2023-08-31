@@ -99,7 +99,7 @@ button:hover {
 .about:hover {
   color: rgb(0, 0, 0);
   background-color: white;
-  border-radius: 7px;
+  border-radius: 9px;
 }
 
 #tryAgain:hover {
@@ -519,21 +519,12 @@ u.result-details {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 0px 700px;
-  padding-bottom: 100px;
+  padding: 200px 700px 50px;
+  
   text-align:  center;
 }
 
-.about-title {
-  color: #d9d9d9;
-  font-family: Poppins;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding: 100px 700px;
-  text-align:  center;
-}
+
 
 .JG {
   color: #d9d9d9;
@@ -543,11 +534,23 @@ u.result-details {
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
-  padding-bottom: 100px;
+  
 }
 
 .links {
   padding: 0 700px;
   list-style-type: none;
   text-align:  center;
+  transition: all 0.3s ease 0s;
+  
 }
+
+.links a {
+  transition: all 0.3s ease 0s;
+  
+}
+
+.links a:hover {
+  color: white;
+}
+
