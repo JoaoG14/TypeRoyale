@@ -99,7 +99,7 @@ button:hover {
 .about:hover {
   color: rgb(0, 0, 0);
   background-color: white;
-  border-radius: 9px;
+  border-radius: 7px;
 }
 
 #tryAgain:hover {
@@ -243,7 +243,7 @@ textarea {
   position: absolute;
 }
 .wrapper .content-box {
-  padding: 20px 0px 0;
+  padding: 5px 0px 0;
   border-radius: 10px;
 }
 .content-box .typing-text {
@@ -445,7 +445,15 @@ u.result-details {
   border-radius: 9px;
   background: #212121;
   margin-top: 30px;
-  margin-left: 42.5%;
+  display: inline-block;
+  
+  
+}
+
+.track-container {
+  width: 100%;
+  text-align: center;
+  
 }
 
 #switch {
@@ -470,7 +478,7 @@ u.result-details {
   background-color: rgba(0, 0, 0, 0);
   color: #000000;
   line-height: 40px;
-  color: #070707;
+  
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
