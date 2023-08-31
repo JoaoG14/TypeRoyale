@@ -421,7 +421,6 @@ u.result-details {
 }
 
 #tryAgain {
-  
   width: 930px;
   color: rgb(153, 153, 153);
 }
@@ -446,14 +445,11 @@ u.result-details {
   background: #212121;
   margin-top: 30px;
   display: inline-block;
-  
-  
 }
 
 .track-container {
   width: 100%;
   text-align: center;
-  
 }
 
 #switch {
@@ -478,7 +474,7 @@ u.result-details {
   background-color: rgba(0, 0, 0, 0);
   color: #000000;
   line-height: 40px;
-  
+
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -503,4 +499,55 @@ u.result-details {
 
 .wpm {
   color: rgba(0, 0, 0, 0);
+}
+
+.modal {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+
+  & > * {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.description {
+  color: #d9d9d9;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0px 700px;
+  padding-bottom: 100px;
+  text-align:  center;
+}
+
+.about-title {
+  color: #d9d9d9;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 100px 700px;
+  text-align:  center;
+}
+
+.JG {
+  color: #d9d9d9;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  padding-bottom: 100px;
+}
+
+.links {
+  padding: 0 700px;
+  list-style-type: none;
+  text-align:  center;
 }
