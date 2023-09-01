@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-  background-color: #22e496;
+  background-color: #32F4A6;
 }
 
 .cta {
@@ -137,7 +137,7 @@ button:hover {
 
   border-radius: 10px;
  
-  background-color: #22e496;
+  background-color: #32F4A6;
 }
   
 
@@ -146,7 +146,7 @@ button:hover {
   color: #000000;
   display: block;
   font-size: 16px;
-  background-color: #22e496;
+  background-color: #32F4A6;
 
   margin: 10px 10px 10px 10px;
   padding: 5px 10px;
@@ -212,7 +212,7 @@ button:hover {
   height: 58.775px;
 
   border-radius: 10px;
-  color: #22e496;
+  color: #32F4A6;
 
   display: inline-block;
   vertical-align: middle;
