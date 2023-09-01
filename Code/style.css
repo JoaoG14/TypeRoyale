@@ -421,8 +421,10 @@ u.result-details {
 }
 
 #tryAgain {
-  width: 930px;
+  width: 0px;
+  height: 0px;
   color: rgb(153, 153, 153);
+  padding: 0px;
 }
 
 .content {
@@ -513,6 +515,16 @@ u.result-details {
   }
 }
 
+#aboutTitle {
+  color: #ffffff;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 150px 0px 00px 400px;
+} 
+
 .description {
   color: #d9d9d9;
   font-family: Poppins;
@@ -520,12 +532,16 @@ u.result-details {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 200px 500px 50px;
+  padding: 50px 0px 50px 400px;
   
-  text-align:  center;
+  text-align:  left;
 }
 
-
+#aboutKeyboard {
+  padding-top: 250px;
+  float: right;
+  padding-right: 400px;
+}
 
 .JG {
   color: #d9d9d9;
@@ -539,9 +555,9 @@ u.result-details {
 }
 
 .links {
-  padding: 0 700px;
+  padding: 0 400px;
   list-style-type: none;
-  text-align:  center;
+  text-align:  left;
   transition: all 0.3s ease 0s;
   
 }
@@ -562,4 +578,22 @@ img {
 #bmc-wbtn {
   margin: 0px;
   
+}
+
+.back {
+  color: #6e6e6e;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.back:hover {
+  color: white;
+}
+
+#leftSection {
+
+  float: left;
+}
+#rightSelection {
+  float: right;
 }
