@@ -124,6 +124,7 @@ button:hover {
 
   border-radius: 10px;
   border: 1.5px solid #5b5b5b;
+  
 }
 
 .key-pressed {
@@ -139,6 +140,7 @@ button:hover {
   background-color: #22e496;
 }
   
+
   
 .key-pressed span {
   color: #000000;
@@ -162,6 +164,10 @@ button:hover {
 
 #spacebar span {
   color: #5b5b5b;
+}
+
+#spacebar-pressed span {
+  color: #000000;
 }
 
 #keyrow1 {
@@ -193,11 +199,20 @@ button:hover {
 }
 
 #spacebar {
+  width: 350px;
+  height: 58.775px;
+
+  
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#spacebar-pressed {
   width: 486.579px;
   height: 58.775px;
 
   border-radius: 10px;
-  border: 1px solid #5b5b5b;
+  color: #22e496;
 
   display: inline-block;
   vertical-align: middle;
