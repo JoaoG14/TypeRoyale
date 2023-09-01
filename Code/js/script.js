@@ -91,3 +91,9 @@ function resetGame() {
 loadParagraphs();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
+
+window.addEventListener('keyup', function(event) {
+    if (event.keyCode === 9) {
+      resetGame();
+    }
+  });
