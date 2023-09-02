@@ -16,6 +16,11 @@
 
 main {
   overflow: hidden;
+  -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+    zoom: 0.9; /* Other non-webkit browsers */
+    zoom: 90%; /* Webkit browsers */
+
+
 }
 
 li,
@@ -88,10 +93,10 @@ button:hover {
 }
 
 .about {
-  margin: 20px;
+  
   transition: all 0.3s ease 0s;
   padding: 0px 10px;
-  margin: 10px;
+  
   color: rgb(226, 226, 226);
   font-size: 16px;
 }
@@ -124,6 +129,8 @@ button:hover {
 
   border-radius: 10px;
   border: 1.5px solid #5b5b5b;
+
+  transition: all 0.3s ease 0s;
   
 }
 
@@ -137,7 +144,9 @@ button:hover {
 
   border-radius: 10px;
  
-  background-color: #32F4A6;
+  background-color: #ffffff;
+
+  transition: all 0.3s ease 0s;
 }
   
 
@@ -146,10 +155,12 @@ button:hover {
   color: #000000;
   display: block;
   font-size: 16px;
-  background-color: #32F4A6;
+  background-color: #ffffff;
 
   margin: 10px 10px 10px 10px;
   padding: 5px 10px;
+
+  transition: all 0.3s ease 0s;
 }
 
 .key span {
@@ -160,6 +171,8 @@ button:hover {
 
   margin: 10px 10px 10px 10px;
   padding: 5px 10px;
+
+  transition: all 0.3s ease 0s;
 }
 
 #spacebar span {
@@ -566,9 +579,9 @@ padding: 150px 0px 00px 400px;
 } 
 
 .description {
-  color: #d9d9d9;
+  color: #a7a7a7;
   font-family: Poppins;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -638,3 +651,56 @@ img {
   float: right;
 }
 
+@media (max-width: 767px) {
+  #keyboard {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin-top: 30px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-right: 0;
+    padding-right: 5px;
+  }
+  
+}
+
+
+@media (max-width: 1300px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  
+}
+
+@media (max-width: 1300px) {
+  #aboutTitle, .description, .links {
+    padding-left: 150px;
+  }
+  
+}
+
+@media (max-width: 1693px) {
+  #aboutKeyboard {
+    display: none;
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+  #aboutTitle, .description, .links {
+    padding-left: 40px;
+  }
+  
+}
