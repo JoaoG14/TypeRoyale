@@ -16,10 +16,9 @@
 
 main {
   overflow: hidden;
-  -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
-    zoom: 0.9; /* Other non-webkit browsers */
-    zoom: 90%; /* Webkit browsers */
-
+  /* -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+  zoom: 0.9; /* Other non-webkit browsers */
+  zoom: 90%; /* Webkit browsers */
 
 }
 
@@ -288,7 +287,7 @@ textarea {
 }
 .wrapper {
   width: 770px;
-  padding: 29px;
+  padding: 29px 0px;
 }
 .wrapper .input-field {
   opacity: 0;
@@ -489,7 +488,7 @@ u.result-details {
 }
 
 .wrapper {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
