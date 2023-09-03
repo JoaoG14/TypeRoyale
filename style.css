@@ -574,7 +574,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-padding: 150px 0px 00px 400px;
+padding: 150px 0px 00px 0px;
 } 
 
 .description {
@@ -584,7 +584,7 @@ padding: 150px 0px 00px 400px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 50px 0px 50px 400px;
+  padding: 50px 0px 50px 0px;
   
   text-align:  left;
 }
@@ -607,7 +607,7 @@ padding: 150px 0px 00px 400px;
 }
 
 .links {
-  padding: 0 400px;
+  padding: 0 00px;
   list-style-type: none;
   text-align:  left;
   transition: all 0.3s ease 0s;
@@ -643,11 +643,13 @@ img {
 }
 
 #leftSection {
-
+  padding-left: 400px;
   float: left;
 }
-#rightSelection {
+#rightSection {
   float: right;
+  padding-right: 400px;
+  margin-top: 210px;
 }
 
 @media (max-width: 767px) {
@@ -656,6 +658,8 @@ img {
   }
   
 }
+
+
 
 @media (max-width: 767px) {
   .wrapper {
@@ -682,12 +686,7 @@ img {
   
 }
 
-@media (max-width: 1300px) {
-  #aboutTitle, .description, .links {
-    padding-left: 150px;
-  }
-  
-}
+
 
 @media (max-width: 1693px) {
   #aboutKeyboard {
@@ -697,9 +696,5 @@ img {
   
 }
 
-@media (max-width: 767px) {
-  #aboutTitle, .description, .links {
-    padding-left: 40px;
-  }
-  
-}
+
+
