@@ -100,5 +100,5 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-//Keyboard lights
+//Light mode 2.0
 
