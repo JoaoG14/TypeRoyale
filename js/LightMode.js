@@ -28,9 +28,7 @@ const disableLightMode = () => {
   localStorage.setItem("lightMode", null);
 };
 
-if (lightMode === "enabled") {
-  enableLightMode();
-}
+checkTheme();
 
 lightModeToggle.addEventListener("click", () => {
   lightMode = localStorage.getItem("lightMode");
