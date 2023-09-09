@@ -1,12 +1,28 @@
 #soonTitle {
-    color: white;
-    text-align: center;
-    margin-top: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 #soonDescription {
-    color: white;
-    text-align: center;
-    justify-items: center;
-    margin-top: 30px;
+  color: white;
+  text-align: center;
+  justify-items: center;
+  margin-top: 40px;
+
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
