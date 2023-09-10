@@ -16,7 +16,7 @@
   color: white;
   text-align: center;
   justify-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -25,4 +25,70 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+#mc_embed_signup {
+  color: white;
+  width: 400px;
+  height: 400px;
+  
+}
+
+#emailConatiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#optionalParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribeButton {
+  color: rgb(0, 0, 0);
+  background-color: #32F4A6;
+  padding: 10px;
+  border-radius: 9px;
+  border: 0px;
+  width: 150px;
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+#mc_embed_signup .mc-field-group label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+  border: #fff;
+  background-color: rgb(27, 27, 27);
+  border-radius: 9px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+::placeholder {
+  color: rgb(112, 112, 112);
+  padding-left: 10px;
+}
+
+#subscribeButtonWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 16px;
 }
