@@ -57,6 +57,7 @@
   width: 150px;
   margin-left: 125px;
   margin-top: 20px;
+  height: 50px;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -91,4 +92,13 @@
 
 input {
   font-size: 16px;
+}
+
+#switch {
+  padding: 8.5px 22px;
+}
+
+#backswitch {
+  padding-right: 26px;
+  padding-left: 26px;
 }
