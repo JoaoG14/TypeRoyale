@@ -11,6 +11,7 @@
   --correct-color: #32F4A6;
   --track-color: #212121;
   --multiplayer-color: #929090;
+  --email-input: rgb(27, 27, 27);
 }
 
 .light {
@@ -25,6 +26,7 @@
   --correct-color: black;
   --track-color: #5B5B5B;
   --multiplayer-color: #E2E2E2;
+  --email-input: rgb(207, 207, 207);
 }
 
 #soonTitle {
@@ -41,7 +43,7 @@
 }
 
 #soonDescription {
-  color: var(--text-color);
+  color: var(--secondary-text);
   text-align: center;
   justify-items: center;
   margin-top: 10px;
@@ -99,7 +101,7 @@
   padding: 8px 0;
   text-indent: 2%;
   border: none;
-  background-color: rgb(27, 27, 27);
+  background-color: var(--email-input);
   border-radius: 9px;
   height: 50px;
   margin-bottom: 10px;
@@ -120,7 +122,7 @@
 
 input {
   font-size: 16px;
-  color: white;
+  color: var(--solid-b-w);
 }
 
 #switch {
