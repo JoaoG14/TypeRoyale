@@ -99,6 +99,3 @@ window.addEventListener("keyup", function (event) {
     resetGame();
   }
 });
-
-//Light mode 2.0
-

@@ -1,9 +1,37 @@
+
+:root {
+  --bg-color: #070707;
+  --main-color: #070707;
+  --secondary-color: #d9d9d9;
+  --text-color: #d9d9d9;
+  --solid-b-w: white;
+  --secondary-text: #a7a7a7;
+  --logo: url(./assets/compact-logo.png);
+  --span-color: #c9c9c980;
+  --correct-color: #32F4A6;
+  --track-color: #212121;
+  --multiplayer-color: #929090;
+}
+
+.light {
+  --bg-color: #d9d9d9;
+  --text-color: #070707;
+  --solid-b-w: black;
+  --secondary-text: rgb(51, 51, 51);
+  --logo: url(./assets/compact-logo-black.png);
+  --main-color: #d9d9d9;
+  --secondary-color: #070707;
+  --span-color: #20202080;
+  --correct-color: black;
+  --track-color: #5B5B5B;
+  --multiplayer-color: #E2E2E2;
+}
+
 #soonTitle {
-  color: white;
+  color: var(--solid-b-w);
   text-align: center;
   margin-top: 40px;
 
-  color: #fff;
   text-align: center;
   font-family: Poppins;
   font-size: 48px;
@@ -13,12 +41,12 @@
 }
 
 #soonDescription {
-  color: white;
+  color: var(--text-color);
   text-align: center;
   justify-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 
-  color: rgba(255, 255, 255, 0.5);
+  
   text-align: center;
   font-family: Poppins;
   font-size: 22px;
@@ -49,8 +77,8 @@
 }
 
 #subscribeButton {
-  color: rgb(0, 0, 0);
-  background-color: #32F4A6;
+  color: var(--main-color);
+  background-color: var(--correct-color);
   padding: 10px;
   border-radius: 9px;
   border: 0px;
@@ -70,7 +98,7 @@
   width: 100%;
   padding: 8px 0;
   text-indent: 2%;
-  border: #fff;
+  border: none;
   background-color: rgb(27, 27, 27);
   border-radius: 9px;
   height: 50px;
@@ -92,6 +120,7 @@
 
 input {
   font-size: 16px;
+  color: white;
 }
 
 #switch {
