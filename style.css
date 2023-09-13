@@ -330,9 +330,10 @@ textarea {
 }
 .typing-text p {
   font-size: 21px;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
-  word-break: keep-all;
+  word-break: break-all; 
+  
 }
 .typing-text p span {
   position: relative;
@@ -363,6 +364,7 @@ textarea {
   background: var(--correct-color);
   animation: blink 1s ease-in-out infinite;
 }
+
 
 .content-box .content {
   margin-top: 17px;
