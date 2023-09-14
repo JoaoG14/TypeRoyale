@@ -80,7 +80,7 @@
 
 #subscribeButton {
   color: var(--main-color);
-  background-color: var(--correct-color);
+  background-color: var(--solid-b-w);
   padding: 10px;
   border-radius: 9px;
   border: 0px;

@@ -128,7 +128,7 @@ header {
 
 .about:hover {
   color: var(--main-color);
-  background-color: var(--secondary-color);
+  background-color: var(--solid-b-w);
   border-radius: 7px;
 }
 
@@ -779,4 +779,8 @@ img {
   border-radius: 9999px;
   
   background: var(--secondary-color);
+}
+
+#switchText {
+  text-align: center;
 }
