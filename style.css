@@ -44,8 +44,9 @@
   --wpm-tag: #535353;
 }
 
+
 body {
-  transition: all 0, 6 ease 0;
+  transition: all 0,3 ease 0;
 }
 
 main {
