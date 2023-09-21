@@ -7,10 +7,8 @@
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
 
-  
-
   /*block the selection*/
-  
+
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -25,9 +23,10 @@
   --secondary-text: #a7a7a7;
   --logo: url(./assets/compact-logo.png);
   --span-color: #c9c9c980;
-  --correct-color: #32F4A6;
+  --correct-color: #32f4a6;
   --track-color: #212121;
   --multiplayer-color: #929090;
+  --wpm-tag: #d6d6d6;
 }
 
 .light {
@@ -40,19 +39,19 @@
   --secondary-color: #070707;
   --span-color: #20202080;
   --correct-color: black;
-  --track-color: #5B5B5B;
-  --multiplayer-color: #E2E2E2;
+  --track-color: #5b5b5b;
+  --multiplayer-color: #e2e2e2;
+  --wpm-tag: #535353;
 }
 
 body {
-  transition: all 0,6 ease 0;
+  transition: all 0, 6 ease 0;
 }
 
 main {
   overflow: hidden; /* -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
   zoom: 0.9; /* Other non-webkit browsers */
   zoom: 90%; /* Webkit browsers */
-
 }
 
 li,
@@ -105,10 +104,6 @@ header {
   text-align: right;
 }
 
-
-
-
-
 .cta {
   color: black;
   border: none;
@@ -118,10 +113,9 @@ header {
 }
 
 .about {
-  
   transition: all 0.4s ease 0s;
   padding: 0px 10px;
-  
+
   color: var(--text-color);
   font-size: 16px;
 }
@@ -140,7 +134,6 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-
 .key {
   width: 59.144px;
   height: 59.144px;
@@ -153,7 +146,6 @@ header {
   border: 1.5px solid #5b5b5b;
 
   transition: all 0.3s ease 0s;
-  
 }
 
 .key-pressed {
@@ -165,19 +157,17 @@ header {
   vertical-align: middle;
 
   border-radius: 10px;
- 
-  background-color: var(--secondary-color);
+
+  background-color: var(--solid-b-w);
 
   transition: all 0.3s ease 0s;
 }
-  
 
-  
 .key-pressed span {
   color: var(--bg-color);
   display: block;
   font-size: 16px;
-  background-color: var(--secondary-color);
+  background-color: var(--solid-b-w);
 
   margin: 10px 10px 10px 10px;
   padding: 5px 10px;
@@ -189,7 +179,6 @@ header {
   color: #5b5b5b;
   display: block;
   font-size: 16px;
-  
 
   margin: 10px 10px 10px 10px;
   padding: 5px 10px;
@@ -237,7 +226,6 @@ header {
   width: 450px;
   height: 58.775px;
 
-  
   display: inline-block;
   vertical-align: middle;
 }
@@ -247,7 +235,7 @@ header {
   height: 58.775px;
 
   border-radius: 10px;
-  color: #32F4A6;
+  color: #32f4a6;
 
   display: inline-block;
   vertical-align: middle;
@@ -332,14 +320,12 @@ textarea {
   font-size: 21px;
   text-align: center;
   letter-spacing: 1px;
-  word-break: break-all; 
-  
+  word-break: break-all;
 }
 .typing-text p span {
   position: relative;
 }
 .typing-text p span.correct {
-  
   color: var(--correct-color);
 }
 .typing-text p span.incorrect {
@@ -364,7 +350,6 @@ textarea {
   background: var(--correct-color);
   animation: blink 1s ease-in-out infinite;
 }
-
 
 .content-box .content {
   margin-top: 17px;
@@ -545,8 +530,6 @@ u.result-details {
   padding: 8.5px 31px;
 }
 
-
-
 #backswitch {
   display: inline;
   padding: 0px 18px;
@@ -601,13 +584,13 @@ u.result-details {
 
 #aboutTitle {
   color: var(--solid-b-w);
-font-family: Poppins;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding: 150px 0px 00px 0px;
-} 
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 150px 0px 00px 0px;
+}
 
 .description {
   color: var(--secondary-text);
@@ -617,8 +600,8 @@ padding: 150px 0px 00px 0px;
   font-weight: 500;
   line-height: normal;
   padding: 50px 0px 50px 0px;
-  
-  text-align:  left;
+
+  text-align: left;
 }
 
 #aboutKeyboard {
@@ -635,7 +618,7 @@ padding: 150px 0px 00px 0px;
   font-weight: 500;
   line-height: normal;
   text-decoration-line: none;
-  
+
   transition: all 0.3s ease 0s;
 }
 
@@ -650,14 +633,12 @@ padding: 150px 0px 00px 0px;
 .links {
   padding: 0 00px;
   list-style-type: none;
-  text-align:  left;
+  text-align: left;
   transition: all 0.3s ease 0s;
-  
 }
 
 .links a {
   transition: all 0.3s ease 0s;
-  
 }
 
 .links a:hover {
@@ -668,12 +649,11 @@ padding: 150px 0px 00px 0px;
 }
 
 img {
-  background: none
+  background: none;
 }
 
 #bmc-wbtn {
   margin: 0px;
-  
 }
 
 .back {
@@ -700,16 +680,12 @@ img {
   #keyboard {
     display: none;
   }
-  
 }
-
-
 
 @media (max-width: 767px) {
   .wrapper {
     margin-top: 30px;
   }
-  
 }
 
 @media (max-width: 767px) {
@@ -717,32 +693,24 @@ img {
     margin-right: 0;
     padding-right: 5px;
   }
-  
 }
-
 
 @media (max-width: 1300px) {
   header {
     padding-left: 30px;
     padding-right: 30px;
   }
-
-  
 }
-
-
 
 @media (max-width: 1693px) {
   #aboutKeyboard {
     display: none;
   }
-
-  
 }
 
 #switchWrapper {
   width: 38px;
-  
+
   margin: 30px auto;
   position: relative;
 }
@@ -760,27 +728,82 @@ img {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-
-  
 }
 
 .light #switchTheme button {
   margin-right: 3px;
   right: 0;
   left: initial;
-  
 }
 
 #switchTheme span {
   display: block;
   width: 38px;
   height: 20px;
-  
+
   border-radius: 9999px;
-  
+
   background: var(--secondary-color);
 }
 
 #switchText {
   text-align: center;
+}
+
+
+
+#results {
+  text-align: center;
+  display: none;
+}
+
+#wpm {
+
+  margin: 50px;
+  margin-bottom: 0px;
+  height: 65px;
+
+  color: var(--solid-b-w);
+  text-align: center;
+  font-family: Anton;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#wpmTag {
+
+  margin-bottom: 45px;
+
+  color: var(--wpm-tag);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+#testDetails {
+
+  margin-bottom: 50px;
+
+  color: #7a7a7a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#restartText {
+  color: var(--solid-b-w);;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

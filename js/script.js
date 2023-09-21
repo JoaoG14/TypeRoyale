@@ -3,7 +3,7 @@ const typingText = document.querySelector(".typing-text p"),
   tryAgainBtn = document.querySelector(".content button"),
   timeTag = document.querySelector(".time span b"),
   mistakeTag = document.querySelector(".mistake span"),
-  wpmTag = document.querySelector(".wpm span"),
+  wpmTag = document.querySelector("p#wpm"),
   cpmTag = document.querySelector(".cpm span");
 
 let timer,
@@ -12,8 +12,16 @@ let timer,
   charIndex = (mistakes = isTyping = 0);
 
 function loadParagraphs() {
+
+  document.getElementById("results").style.display = "none"
+  
+  document.getElementById("keyboard").style.display = "block";
+  document.getElementById("quoteSection").style.display = "flex";
+  document.getElementById("switchTheme").style.display = "block";
+  
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = "";
+  
   paragraphs[ranIndex].split("").forEach((char) => {
     let span = `<span>${char}</span>`;
     typingText.innerHTML += span;
@@ -60,8 +68,17 @@ function initTyping() {
     mistakeTag.innerText = mistakes;
     cpmTag.innerText = charIndex - mistakes;
   } else {
+    //Timer ends
     clearInterval(timer);
     inpField.value = "";
+
+    //hide test elements
+    document.getElementById("keyboard").style.display = "none";
+    document.getElementById("quoteSection").style.display = "none";
+    document.getElementById("switchTheme").style.display = "none";
+
+    //display results elements
+    document.getElementById("results").style.display = "block"
   }
 }
 
