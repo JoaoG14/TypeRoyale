@@ -1,4 +1,4 @@
-const aA = document.querySelector("#aA");
+let aA = document.querySelector("#aA");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 65) {
@@ -12,7 +12,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const bB = document.querySelector("#bB");
+let bB = document.querySelector("#bB");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 66) {
@@ -26,7 +26,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const cC = document.querySelector("#cC");
+let cC = document.querySelector("#cC");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 67) {
@@ -40,7 +40,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const dD = document.querySelector("#dD");
+let dD = document.querySelector("#dD");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 68) {
@@ -54,7 +54,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const eE = document.querySelector("#eE");
+let eE = document.querySelector("#eE");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 69) {
@@ -68,7 +68,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const fF = document.querySelector("#fF");
+let fF = document.querySelector("#fF");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 70) {
@@ -82,7 +82,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const gG = document.querySelector("#gG");
+let gG = document.querySelector("#gG");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 71) {
@@ -96,7 +96,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const hH = document.querySelector("#hH");
+let hH = document.querySelector("#hH");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 72) {
@@ -110,7 +110,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const iI = document.querySelector("#iI");
+let iI = document.querySelector("#iI");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 73) {
@@ -124,7 +124,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const jJ = document.querySelector("#jJ");
+let jJ = document.querySelector("#jJ");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 74) {
@@ -138,7 +138,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const kK = document.querySelector("#kK");
+let kK = document.querySelector("#kK");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 75) {
@@ -152,7 +152,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const lL = document.querySelector("#lL");
+let lL = document.querySelector("#lL");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 76) {
@@ -166,7 +166,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const mM = document.querySelector("#mM");
+let mM = document.querySelector("#mM");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 77) {
@@ -180,7 +180,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const nN = document.querySelector("#nN");
+let nN = document.querySelector("#nN");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 78) {
@@ -194,7 +194,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const oO = document.querySelector("#oO");
+let oO = document.querySelector("#oO");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 79) {
@@ -208,7 +208,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const pP = document.querySelector("#pP");
+let pP = document.querySelector("#pP");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 80) {
@@ -222,7 +222,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const qQ = document.querySelector("#qQ");
+let qQ = document.querySelector("#qQ");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 81) {
@@ -236,7 +236,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const rR = document.querySelector("#rR");
+let rR = document.querySelector("#rR");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 82) {
@@ -250,7 +250,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const sS = document.querySelector("#sS");
+let sS = document.querySelector("#sS");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 83) {
@@ -264,7 +264,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const tT = document.querySelector("#tT");
+let tT = document.querySelector("#tT");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 84) {
@@ -278,7 +278,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const uU = document.querySelector("#uU");
+let uU = document.querySelector("#uU");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 85) {
@@ -292,7 +292,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const vV = document.querySelector("#vV");
+let vV = document.querySelector("#vV");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 86) {
@@ -306,7 +306,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const wW = document.querySelector("#wW");
+let wW = document.querySelector("#wW");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 87) {
@@ -320,7 +320,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const xX = document.querySelector("#xX");
+let xX = document.querySelector("#xX");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 88) {
@@ -334,7 +334,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const yY = document.querySelector("#yY");
+let yY = document.querySelector("#yY");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 89) {
@@ -348,7 +348,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const zZ = document.querySelector("#zZ");
+let zZ = document.querySelector("#zZ");
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 90) {
@@ -362,7 +362,7 @@ window.addEventListener("keyup", function (event) {
   }
 });
 
-const dot = document.querySelector("#dot");
+let dot = document.querySelector("#dot");
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 190) {
@@ -376,7 +376,7 @@ window.addEventListener("keydown", function (event) {
     }
   });
   
-const comma = document.querySelector("#comma");
+let comma = document.querySelector("#comma");
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 188) {
@@ -390,7 +390,7 @@ window.addEventListener("keydown", function (event) {
     }
   });
   
-const semicolon = document.querySelector("#semicolon");
+let semicolon = document.querySelector("#semicolon");
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 186) {
@@ -404,7 +404,7 @@ window.addEventListener("keydown", function (event) {
     }
   });
   
-const backspace = document.querySelector("#backspace");
+let backspace = document.querySelector("#backspace");
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 8) {
@@ -419,7 +419,7 @@ window.addEventListener("keydown", function (event) {
   });
   
  
-const spacebar = document.querySelector("#spacebar");
+let spacebar = document.querySelector("#spacebar");
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 32) {
