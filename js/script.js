@@ -64,7 +64,6 @@ function initTyping() {
     );
     wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
     
-
     wpmTag.innerText = wpm;
     mistakeTag.innerText = mistakes;
     cpmTag.innerText = charIndex - mistakes;
