@@ -68,16 +68,14 @@ function initTyping() {
     mistakeTag.innerText = mistakes;
     cpmTag.innerText = charIndex - mistakes;
   } else {
-    //Timer ends
+    
     clearInterval(timer);
     inpField.value = "";
-
-    //hide test elements
+    
     document.getElementById("keyboard").style.display = "none";
     document.getElementById("quoteSection").style.display = "none";
     document.getElementById("switchTheme").style.display = "none";
 
-    //display results elements
     document.getElementById("results").style.display = "block"
   }
 }
