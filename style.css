@@ -818,7 +818,7 @@ img {
   
 }
 
-@media (max-width: 500px) {
+@media (max-width: 670px) {
   #keyrow1 {
       display: none;
   }
