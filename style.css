@@ -817,3 +817,18 @@ img {
   line-height: normal;
   
 }
+
+@media (max-width: 500px) {
+  #keyrow1 {
+      display: none;
+  }
+  #keyrow2 {
+    display: none;
+  }
+  #keyrow3 {
+    display: none;
+  }
+  #keyrow4 {
+    display: none;
+  }
+}
