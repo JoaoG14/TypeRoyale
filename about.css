@@ -32,7 +32,7 @@
     }
   }
 
-  @media (max-width: 1302px) {
+  @media (max-width: 1301px) {
     #keyboard {
         display: none;
     }
