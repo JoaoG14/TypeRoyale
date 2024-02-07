@@ -4,11 +4,11 @@ function checkTheme() {
   }
 }
 
-window.onload = checkTheme
+window.onload = checkTheme;
 
 let lightMode = localStorage.getItem("lightMode");
 
-const lightModeToggle = document.querySelector("#switchWrapper");
+let lightModeToggle = document.querySelector("#switchWrapper");
 
 const img = document.querySelector(".logo");
 
@@ -38,4 +38,3 @@ lightModeToggle.addEventListener("click", () => {
     disableLightMode();
   }
 });
-
