@@ -12,16 +12,15 @@ let timer,
   charIndex = (mistakes = isTyping = 0);
 
 function loadParagraphs() {
+  document.getElementById("results").style.display = "none";
 
-  document.getElementById("results").style.display = "none"
-  
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
-  
+
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = "";
-  
+
   paragraphs[ranIndex].split("").forEach((char) => {
     let span = `<span>${char}</span>`;
     typingText.innerHTML += span;
@@ -63,20 +62,19 @@ function initTyping() {
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
     wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
-    
+
     wpmTag.innerText = wpm;
     mistakeTag.innerText = mistakes;
     cpmTag.innerText = charIndex - mistakes;
   } else {
-    
     clearInterval(timer);
     inpField.value = "";
-    
+
     document.getElementById("keyboard").style.display = "none";
     document.getElementById("quoteSection").style.display = "none";
     document.getElementById("switchTheme").style.display = "none";
 
-    document.getElementById("results").style.display = "block"
+    document.getElementById("results").style.display = "block";
   }
 }
 
