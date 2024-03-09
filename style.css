@@ -832,3 +832,8 @@ img {
     display: none;
   }
 }
+
+#bmc-wbtn svg {
+  background-color: #40DCA5;
+  color: #40DCA5;
+}
