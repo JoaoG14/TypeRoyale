@@ -38,3 +38,4 @@ lightModeToggle.addEventListener("click", () => {
     disableLightMode();
   }
 });
+

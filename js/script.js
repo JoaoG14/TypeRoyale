@@ -4,12 +4,29 @@ const typingText = document.querySelector(".typing-text p"),
   timeTag = document.querySelector(".time span b"),
   mistakeTag = document.querySelector(".mistake span"),
   wpmTag = document.querySelector("p#wpm"),
-  cpmTag = document.querySelector(".cpm span");
+  cpmTag = document.querySelector(".cpm span"),
+  multiplayer = document.querySelector("#multiplayer"),
+  multiplayerBtn = document.querySelector(".multiplayer"),
+  practiceBtn = document.querySelector(".practice");
 
 let timer,
   maxTime = 15,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0);
+
+multiplayerBtn.addEventListener("click", () => {
+  multiplayer.style.display = "block";
+  document.getElementById("keyboard").style.display = "none";
+  document.getElementById("quoteSection").style.display = "none";
+  document.getElementById("switchTheme").style.display = "none";
+});
+
+practiceBtn.addEventListener("click", () => {
+  multiplayer.style.display = "none";
+  document.getElementById("keyboard").style.display = "block";
+  document.getElementById("quoteSection").style.display = "flex";
+  document.getElementById("switchTheme").style.display = "block";
+})
 
 function loadParagraphs() {
   document.getElementById("results").style.display = "none";

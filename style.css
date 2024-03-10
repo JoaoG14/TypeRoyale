@@ -319,9 +319,9 @@ textarea {
 }
 .typing-text p {
   font-size: 21px;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 1px;
-  word-break: keep-all;
+  word-break: normal;
 }
 .typing-text p span {
   position: relative;
@@ -836,4 +836,8 @@ img {
 #bmc-wbtn svg {
   background-color: #40DCA5;
   color: #40DCA5;
+}
+
+#multiplayer {
+  display: none;
 }
