@@ -1,0 +1,54 @@
+#switchModeWrapper {
+  width: 38px;
+
+  margin: 30px auto;
+  position: relative;
+}
+
+#switchMode button {
+  width: 115px;
+  height: 32px;
+  background: var(--main-color);
+  border: 0;
+  border-radius: 99px;
+  margin-left: 6px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+/* .light #switchMode button {
+  margin-right: 3px;
+  right: 0;
+  left: initial;
+} */
+
+#switchMode span {
+  display: block;
+  width: 260px;
+  height: 45px;
+
+  border-radius: 9999px;
+
+  background: var(--secondary-color);
+}
+
+#multiplayerBtn {
+  color: rgb(208, 208, 208);
+  background-color: black;
+  font-size: 14px;
+  margin-left: 110px;
+  transition: all 0.3s ease 0s
+}
+
+#multiplayerBtn:hover {
+  color: white;
+  transition: all 0.3s ease 0s
+}

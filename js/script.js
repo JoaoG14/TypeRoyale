@@ -15,9 +15,11 @@ let timer,
   maxTime = 15,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0),
-  aboutToggle = true;
+  aboutToggle = true,
+  isPlaying = true;
 
 multiplayerBtn.addEventListener("click", () => {
+  isPlaying = false;
   multiplayer.style.display = "block";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
@@ -35,10 +37,13 @@ aboutBtn.addEventListener("click", () => {
     document.getElementById("quoteSection").style.display = "flex";
     document.getElementById("switchTheme").style.display = "block";
     document.getElementById("track").style.display = "inline-block"
+    isPlaying = true;
     return;
   }
+  isPlaying = false;
   aboutPage.style.display = "block";
   aboutBtn.innerHTML = "back"
+  multiplayer.style.display = "none";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
   document.getElementById("switchTheme").style.display = "none";
@@ -47,6 +52,7 @@ aboutBtn.addEventListener("click", () => {
 });
 
 practiceBtn.addEventListener("click", () => {
+  isPlaying = true
   multiplayer.style.display = "none";
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
@@ -161,6 +167,9 @@ tryAgainBtn.addEventListener("click", resetGame);
 
 window.addEventListener("keyup", function (event) {
   if (event.keyCode === 9) {
-    resetGame();
+    if (isPlaying) {
+      resetGame();  
+    }
+    
   }
 });
