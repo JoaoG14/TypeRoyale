@@ -191,6 +191,10 @@ header {
   color: #5b5b5b;
 }
 
+#spacebarAbout span {
+  color: #5b5b5b;
+}
+
 #spacebar-pressed span {
   color: #000000;
 }
@@ -224,6 +228,14 @@ header {
 }
 
 #spacebar {
+  width: 450px;
+  height: 58.775px;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#spacebarAbout {
   width: 450px;
   height: 58.775px;
 
@@ -674,7 +686,7 @@ img {
 #rightSection {
   float: right;
   padding-right: 400px;
-  margin-top: 160px;
+  margin-top: 165px;
 }
 
 @media (max-width: 767px) {
