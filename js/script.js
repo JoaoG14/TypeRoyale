@@ -7,18 +7,43 @@ const typingText = document.querySelector(".typing-text p"),
   cpmTag = document.querySelector(".cpm span"),
   multiplayer = document.querySelector("#multiplayer"),
   multiplayerBtn = document.querySelector(".multiplayer"),
-  practiceBtn = document.querySelector(".practice");
+  practiceBtn = document.querySelector(".practice"),
+  aboutPage = document.querySelector("#aboutPage"),
+  aboutBtn = document.querySelector(".about");
 
 let timer,
   maxTime = 15,
   timeLeft = maxTime,
-  charIndex = (mistakes = isTyping = 0);
+  charIndex = (mistakes = isTyping = 0),
+  aboutToggle = true;
 
 multiplayerBtn.addEventListener("click", () => {
   multiplayer.style.display = "block";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
   document.getElementById("switchTheme").style.display = "none";
+  document.getElementById("results").style.display = "none";
+});
+
+aboutBtn.addEventListener("click", () => {
+  aboutToggle = !aboutToggle;
+
+  if (aboutToggle) {
+    aboutPage.style.display = "none";
+    aboutBtn.innerHTML = "about"
+    document.getElementById("keyboard").style.display = "block";
+    document.getElementById("quoteSection").style.display = "flex";
+    document.getElementById("switchTheme").style.display = "block";
+    document.getElementById("track").style.display = "inline-block"
+    return;
+  }
+  aboutPage.style.display = "block";
+  aboutBtn.innerHTML = "back"
+  document.getElementById("keyboard").style.display = "none";
+  document.getElementById("quoteSection").style.display = "none";
+  document.getElementById("switchTheme").style.display = "none";
+  document.getElementById("results").style.display = "none";
+  document.getElementById("track").style.display = "none"
 });
 
 practiceBtn.addEventListener("click", () => {
@@ -26,7 +51,8 @@ practiceBtn.addEventListener("click", () => {
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
-})
+  resetGame();
+});
 
 function loadParagraphs() {
   document.getElementById("results").style.display = "none";

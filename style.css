@@ -590,7 +590,7 @@ u.result-details {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 150px 0px 00px 0px;
+  padding: 90px 0px 00px 0px;
 }
 
 .description {
@@ -606,7 +606,7 @@ u.result-details {
 }
 
 #aboutKeyboard {
-  padding-top: 250px;
+  
   float: right;
   padding-right: 400px;
 }
@@ -674,7 +674,7 @@ img {
 #rightSection {
   float: right;
   padding-right: 400px;
-  margin-top: 230px;
+  margin-top: 160px;
 }
 
 @media (max-width: 767px) {
@@ -839,5 +839,9 @@ img {
 }
 
 #multiplayer {
+  display: none;
+}
+
+#aboutPage {
   display: none;
 }
