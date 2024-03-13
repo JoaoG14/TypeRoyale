@@ -331,7 +331,7 @@ textarea {
 }
 .typing-text p {
   font-size: 21px;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
   word-break: normal;
 }

@@ -55,6 +55,7 @@ practiceBtn.addEventListener("click", () => {
 });
 
 function loadParagraphs() {
+  let spaceCounter = 0;
   document.getElementById("results").style.display = "none";
 
   document.getElementById("keyboard").style.display = "block";
@@ -64,9 +65,17 @@ function loadParagraphs() {
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = "";
 
-  paragraphs[ranIndex].split("").forEach((char) => {
+  paragraphs[ranIndex].split("").forEach((char) => { 
+    if (char === " ") {
+      spaceCounter++;
+    }
+    if (spaceCounter > 7) {
+      typingText.innerHTML += `<br>`;
+      spaceCounter = 0;
+    }
     let span = `<span>${char}</span>`;
     typingText.innerHTML += span;
+    console.log(spaceCounter)
   });
   typingText.querySelectorAll("span")[0].classList.add("active");
   document.addEventListener("keydown", () => inpField.focus());
