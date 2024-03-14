@@ -9,7 +9,8 @@ const typingText = document.querySelector(".typing-text p"),
   multiplayerBtn = document.querySelector("#multiplayerBtn"),
   practiceBtn = document.querySelector("#practiceBtn"),
   aboutPage = document.querySelector("#aboutPage"),
-  aboutBtn = document.querySelector(".about");
+  aboutBtn = document.querySelector(".about"),
+  settingsBar = document.querySelector("#switchModeWrapper");
 
 let timer,
   maxTime = 15,
@@ -25,6 +26,11 @@ multiplayerBtn.addEventListener("click", () => {
   document.getElementById("quoteSection").style.display = "none";
   document.getElementById("switchTheme").style.display = "none";
   document.getElementById("results").style.display = "none";
+
+  practiceBtn.style.left = 0;
+  practiceBtn.style.marginLeft = "27px";
+  practiceBtn.innerHTML = "multiplayer";
+
 });
 
 aboutBtn.addEventListener("click", () => {
@@ -32,7 +38,8 @@ aboutBtn.addEventListener("click", () => {
 
   if (aboutToggle) {
     aboutPage.style.display = "none";
-    aboutBtn.innerHTML = "about"
+    aboutBtn.innerHTML = "about";
+    settingsBar.style.display = "flex";
     document.getElementById("keyboard").style.display = "block";
     document.getElementById("quoteSection").style.display = "flex";
     document.getElementById("switchTheme").style.display = "block";
@@ -42,7 +49,8 @@ aboutBtn.addEventListener("click", () => {
   }
   isPlaying = false;
   aboutPage.style.display = "block";
-  aboutBtn.innerHTML = "back"
+  aboutBtn.innerHTML = "back";
+  settingsBar.style.display = "none";
   multiplayer.style.display = "none";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
