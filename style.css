@@ -858,3 +858,7 @@ img {
 #aboutPage {
   display: none;
 }
+
+#hidden {
+  display: none;
+}

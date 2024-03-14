@@ -6,8 +6,8 @@ const typingText = document.querySelector(".typing-text p"),
   wpmTag = document.querySelector("p#wpm"),
   cpmTag = document.querySelector(".cpm span"),
   multiplayer = document.querySelector("#multiplayer"),
-  multiplayerBtn = document.querySelector(".multiplayer"),
-  practiceBtn = document.querySelector(".practice"),
+  multiplayerBtn = document.querySelector("#multiplayerBtn"),
+  practiceBtn = document.querySelector("#practiceBtn"),
   aboutPage = document.querySelector("#aboutPage"),
   aboutBtn = document.querySelector(".about");
 

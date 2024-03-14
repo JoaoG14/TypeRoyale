@@ -30,16 +30,14 @@
     </header>
 
     <main>
-      <div class="track-container">
-        <div id="track">
-          <div id="switch">
-            <a class="practice">practice</a>
-          </div>
-          <div id="backswitch">
-            <a class="multiplayer">multiplayer</a>
-          </div>
+      
+      <div id="switchModeWrapper" >
+        <div id="switchMode">
+          <button id="practiceBtn">Practice</button>
+          <span><a id="multiplayerBtn">multiplayer</a></span>
         </div>
       </div>
+      :
 
       <div id="results">
         <p id="wpm">120</p>
@@ -69,7 +67,7 @@
           </div>
           -->
 
-          <input type="text" class="input-field" id="focusReset" />
+          <input type="text" class="input-field" id="focusReset" autocomplete="off"/>
           <div class="content-box">
             <div class="typing-text">
               <p id="typingView"></p>
@@ -130,12 +128,7 @@
         </div>
       </div>
 
-      <div id="switchModeWrapper" >
-        <div id="switchMode">
-          <button>Practice</button>
-          <span><a id="multiplayerBtn">multiplayer</a></span>
-        </div>
-      </div>
+      
 
       <div class="content">
         <button id="tryAgain"></button>
