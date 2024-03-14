@@ -58,3 +58,70 @@
   transition: all 0.5s ease 0s
 
 }
+
+#barContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#topBar {
+  position: relative;
+  width: 420px;
+  height: 54px;
+  background-color: black;
+  border-radius: 999px;
+  /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  
+}
+
+#selected {
+  z-index: 1;
+  color: var(--main-color);
+  height: 38px;
+  width: 125px;
+  border-radius: 999px;
+  margin-left: 8px;
+  position: absolute;
+  
+}
+
+#prac {
+  z-index: 2;
+  background-color: var(--secondary-color);
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px;
+  margin-left: 40px;
+  background-color: var(--main-color);
+}
+
+#multi {
+  z-index: 2;
+  color: #ABABAB;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 40px;
+  background-color: var(--secondary-color);
+}
+
+#set {
+  z-index: 2;
+  color: #ABABAB;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0px;
+  background-color: var(--secondary-color);
+}
+
+#testing {
+  width: 41px;
+  height: 41px;
+  border-radius: 999px;
+  background-color: #1B1B1B;
+  margin-left: 40px;
+}
