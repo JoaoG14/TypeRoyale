@@ -82,7 +82,7 @@
   color: var(--main-color);
   background-color: var(--solid-b-w);
   padding: 10px;
-  border-radius: 9px;
+  border-radius: 999px;
   border: 0px;
   width: 150px;
   margin-left: 125px;
@@ -102,7 +102,7 @@
   text-indent: 2%;
   border: none;
   background-color: var(--email-input);
-  border-radius: 9px;
+  border-radius: 999px;
   height: 50px;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -110,7 +110,7 @@
 
 ::placeholder {
   color: rgb(112, 112, 112);
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 #subscribeButtonWrapper {
@@ -118,6 +118,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  
 }
 
 input {

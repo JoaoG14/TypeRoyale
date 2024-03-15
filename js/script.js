@@ -11,7 +11,8 @@ const typingText = document.querySelector(".typing-text p"),
   aboutPage = document.querySelector("#aboutPage"),
   aboutBtn = document.querySelector("#abt"),
   settingsBar = document.querySelector("#switchModeWrapper"),
-  timerBar = document.querySelector("#timerBar");
+  timerBar = document.querySelector("#timerBar"),
+  selected = document.querySelector("#selected");
 
 let timer,
   maxTime = 15,
@@ -27,27 +28,40 @@ multiplayerBtn.addEventListener("click", () => {
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
   document.getElementById("results").style.display = "none";
-  
+
+  selected.style.marginLeft = "122px";
+  multiplayerBtn.style.color = "black";
+  practiceBtn.style.color = "#ababab";
+  selected.style.width = "145px";
+  practiceBtn.style.cursor = "pointer";
+  multiplayerBtn.style.cursor = "default";
 });
 
 aboutBtn.addEventListener("click", () => {
-  
   isPlaying = false;
   aboutPage.style.display = "block";
   multiplayer.style.display = "none";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
   document.getElementById("results").style.display = "none";
-  document.getElementById("track").style.display = "none"
+  document.getElementById("track").style.display = "none";
 });
 
 practiceBtn.addEventListener("click", () => {
-  isPlaying = true
+  isPlaying = true;
   multiplayer.style.display = "none";
   aboutPage.style.display = "none";
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
+
+  selected.style.marginLeft = "8px";
+  multiplayerBtn.style.color = "#ababab";
+  practiceBtn.style.color = "var(--secondary-color)";
+  selected.style.width = "125px";
+  practiceBtn.style.cursor = "default";
+  multiplayerBtn.style.cursor = "pointer";
+
   resetGame();
 });
 
@@ -62,7 +76,7 @@ function loadParagraphs() {
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = "";
 
-  paragraphs[ranIndex].split("").forEach((char) => { 
+  paragraphs[ranIndex].split("").forEach((char) => {
     if (char === " ") {
       spaceCounter++;
     }
@@ -72,7 +86,7 @@ function loadParagraphs() {
     }
     let span = `<span>${char}</span>`;
     typingText.innerHTML += span;
-    console.log(spaceCounter)
+    console.log(spaceCounter);
   });
   typingText.querySelectorAll("span")[0].classList.add("active");
   document.addEventListener("keydown", () => inpField.focus());
@@ -158,8 +172,7 @@ tryAgainBtn.addEventListener("click", resetGame);
 window.addEventListener("keyup", function (event) {
   if (event.keyCode === 9) {
     if (isPlaying) {
-      resetGame();  
+      resetGame();
     }
-    
   }
 });

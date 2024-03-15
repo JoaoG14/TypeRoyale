@@ -6,7 +6,6 @@
   align-items: center;
   margin: 100px auto;
   margin-bottom: 30px;
-  
 }
 
 #switchMode button {
@@ -55,8 +54,7 @@
 
 #multiplayerBtn:hover {
   color: white;
-  transition: all 0.5s ease 0s
-
+  transition: all 0.5s ease 0s;
 }
 
 #barContainer {
@@ -70,14 +68,13 @@
 
 #topBar {
   position: relative;
-  width: 500px;
+  width: 560px;
   height: 54px;
   background-color: var(--secondary-color);
   border-radius: 999px;
   /* justify-content: space-between; */
   display: flex;
   align-items: center;
-  
 }
 
 #selected {
@@ -88,27 +85,27 @@
   border-radius: 999px;
   margin-left: 8px;
   position: absolute;
-  
+  transition: all 0.3s ease 0s;
+  /* display: none; */
 }
 
 #prac {
   z-index: 2;
-  background-color: var(--secondary-color);
-  color: #000000;
-  cursor: pointer;
+  color: var(--secondary-color);
+  /* cursor: pointer; */
   font-size: 14px;
-  margin: 20px;
+  margin: 30px;
   margin-left: 40px;
-  background-color: var(--main-color);
+  background-color: transparent;
 }
 
 #multi {
   z-index: 2;
-  color: #ABABAB;
+  color: #ababab;
   cursor: pointer;
   font-size: 14px;
-  margin: 40px;
-  background-color: var(--secondary-color);
+  margin: 30px;
+  background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
@@ -118,11 +115,11 @@
 
 #set {
   z-index: 2;
-  color: #ABABAB;
+  color: #ababab;
   cursor: pointer;
   font-size: 14px;
-  margin-right: 40px;
-  background-color: var(--secondary-color);
+  margin: 30px;
+  background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
@@ -132,11 +129,11 @@
 
 #abt {
   z-index: 2;
-  color: #ABABAB;
+  color: #ababab;
   cursor: pointer;
   font-size: 14px;
-  margin-right: 15px;
-  background-color: var(--secondary-color);
+  margin: 30px;
+  background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
@@ -148,6 +145,6 @@
   width: 41px;
   height: 41px;
   border-radius: 999px;
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
   margin-left: 40px;
 }
