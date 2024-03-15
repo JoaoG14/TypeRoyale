@@ -602,7 +602,8 @@ u.result-details {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 90px 0px 00px 0px;
+  padding: 0px 0px 00px 0px;
+  text-align: center;
 }
 
 .description {
@@ -612,16 +613,18 @@ u.result-details {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 50px 0px 50px 0px;
+  padding: 0px 0px 50px 0px;
 
-  text-align: left;
+  text-align: center;
 }
 
-#aboutKeyboard {
-  
-  float: right;
-  padding-right: 400px;
-}
+/* #timerBar {
+  height: 30px;
+  width: 2133px;
+  color: black;
+  background-color: #000000;
+  transition:  15s ;
+} */
 
 .venturous {
   color: var(--solid-b-w);
@@ -646,7 +649,7 @@ u.result-details {
 .links {
   padding: 0 00px;
   list-style-type: none;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease 0s;
 }
 
@@ -658,7 +661,7 @@ u.result-details {
   color: var(--solid-b-w);
   text-decoration-line: none;
   border-radius: 5px;
-  padding: 0px 10px;
+ 
 }
 
 img {
@@ -680,14 +683,10 @@ img {
 }
 
 #leftSection {
-  padding-left: 400px;
-  float: left;
+  justify-content: center;
+  align-items: center;
 }
-#rightSection {
-  float: right;
-  padding-right: 400px;
-  margin-top: 165px;
-}
+
 
 @media (max-width: 767px) {
   #keyboard {
@@ -726,14 +725,20 @@ img {
 
   margin: 30px auto;
   position: relative;
+  
+  border-radius: 99px;
+}
+
+#switchTheme {
+  border-radius: 999px;
 }
 
 #switchTheme button {
   width: 14px;
   height: 14px;
-  background: var(--main-color);
+  background-color: var(--secondary-color);
   border: 0;
-  border-radius: 50%;
+  border-radius: 999px;
   margin-left: 3px;
 
   position: absolute;
@@ -757,7 +762,7 @@ img {
 
   border-radius: 9999px;
 
-  background: var(--secondary-color);
+  background: var(--main-color);
 }
 
 #switchText {

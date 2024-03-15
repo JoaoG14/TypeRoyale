@@ -64,13 +64,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 #topBar {
   position: relative;
-  width: 420px;
+  width: 500px;
   height: 54px;
-  background-color: black;
+  background-color: var(--secondary-color);
   border-radius: 999px;
   /* justify-content: space-between; */
   display: flex;
@@ -107,6 +109,11 @@
   font-size: 14px;
   margin: 40px;
   background-color: var(--secondary-color);
+  transition: all 0.3s ease 0s;
+}
+
+#multi:hover {
+  color: var(--main-color);
 }
 
 #set {
@@ -114,8 +121,27 @@
   color: #ABABAB;
   cursor: pointer;
   font-size: 14px;
-  margin: 0px;
+  margin-right: 40px;
   background-color: var(--secondary-color);
+  transition: all 0.3s ease 0s;
+}
+
+#set:hover {
+  color: var(--main-color);
+}
+
+#abt {
+  z-index: 2;
+  color: #ABABAB;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 15px;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease 0s;
+}
+
+#abt:hover {
+  color: var(--main-color);
 }
 
 #testing {

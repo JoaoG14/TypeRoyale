@@ -6,11 +6,12 @@ const typingText = document.querySelector(".typing-text p"),
   wpmTag = document.querySelector("p#wpm"),
   cpmTag = document.querySelector(".cpm span"),
   multiplayer = document.querySelector("#multiplayer"),
-  multiplayerBtn = document.querySelector("#multiplayerBtn"),
-  practiceBtn = document.querySelector("#practiceBtn"),
+  multiplayerBtn = document.querySelector("#multi"),
+  practiceBtn = document.querySelector("#prac"),
   aboutPage = document.querySelector("#aboutPage"),
-  aboutBtn = document.querySelector(".about"),
-  settingsBar = document.querySelector("#switchModeWrapper");
+  aboutBtn = document.querySelector("#abt"),
+  settingsBar = document.querySelector("#switchModeWrapper"),
+  timerBar = document.querySelector("#timerBar");
 
 let timer,
   maxTime = 15,
@@ -22,39 +23,20 @@ let timer,
 multiplayerBtn.addEventListener("click", () => {
   isPlaying = false;
   multiplayer.style.display = "block";
+  aboutPage.style.display = "none";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
-  document.getElementById("switchTheme").style.display = "none";
   document.getElementById("results").style.display = "none";
-
-  practiceBtn.style.left = 0;
-  practiceBtn.style.marginLeft = "27px";
-  practiceBtn.innerHTML = "multiplayer";
-
+  
 });
 
 aboutBtn.addEventListener("click", () => {
-  aboutToggle = !aboutToggle;
-
-  if (aboutToggle) {
-    aboutPage.style.display = "none";
-    aboutBtn.innerHTML = "about";
-    settingsBar.style.display = "flex";
-    document.getElementById("keyboard").style.display = "block";
-    document.getElementById("quoteSection").style.display = "flex";
-    document.getElementById("switchTheme").style.display = "block";
-    document.getElementById("track").style.display = "inline-block"
-    isPlaying = true;
-    return;
-  }
+  
   isPlaying = false;
   aboutPage.style.display = "block";
-  aboutBtn.innerHTML = "back";
-  settingsBar.style.display = "none";
   multiplayer.style.display = "none";
   document.getElementById("keyboard").style.display = "none";
   document.getElementById("quoteSection").style.display = "none";
-  document.getElementById("switchTheme").style.display = "none";
   document.getElementById("results").style.display = "none";
   document.getElementById("track").style.display = "none"
 });
@@ -62,6 +44,7 @@ aboutBtn.addEventListener("click", () => {
 practiceBtn.addEventListener("click", () => {
   isPlaying = true
   multiplayer.style.display = "none";
+  aboutPage.style.display = "none";
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
@@ -138,7 +121,6 @@ function initTyping() {
 
     document.getElementById("keyboard").style.display = "none";
     document.getElementById("quoteSection").style.display = "none";
-    document.getElementById("switchTheme").style.display = "none";
 
     document.getElementById("results").style.display = "block";
   }
