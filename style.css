@@ -631,7 +631,7 @@ u.result-details {
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   text-decoration-line: none;
 
@@ -773,6 +773,7 @@ img {
   margin-top: 25px;
   font-size: 28px;
   color: var(--solid-b-w);
+  cursor: pointer;
 }
 
 #results {

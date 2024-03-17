@@ -52,10 +52,7 @@
   cursor: pointer;
 }
 
-#multiplayerBtn:hover {
-  color: white;
-  transition: all 0.5s ease 0s;
-}
+
 
 #barContainer {
   display: flex;
@@ -97,6 +94,7 @@
   margin: 30px;
   margin-left: 40px;
   background-color: transparent;
+  transition: all 0.3s ease 0s;
 }
 
 #multi {
@@ -109,10 +107,6 @@
   transition: all 0.3s ease 0s;
 }
 
-#multi:hover {
-  color: var(--main-color);
-}
-
 #set {
   z-index: 2;
   color: #ababab;
@@ -121,10 +115,7 @@
   margin: 30px;
   background-color: transparent;
   transition: all 0.3s ease 0s;
-}
-
-#set:hover {
-  color: var(--main-color);
+  cursor: pointer;
 }
 
 #abt {
@@ -135,10 +126,6 @@
   margin: 30px;
   background-color: transparent;
   transition: all 0.3s ease 0s;
-}
-
-#abt:hover {
-  color: var(--main-color);
 }
 
 #testing {

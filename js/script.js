@@ -10,45 +10,82 @@ const typingText = document.querySelector(".typing-text p"),
   practiceBtn = document.querySelector("#prac"),
   aboutPage = document.querySelector("#aboutPage"),
   aboutBtn = document.querySelector("#abt"),
+  settingsBtn = document.querySelector("#set"),
   settingsBar = document.querySelector("#switchModeWrapper"),
   timerBar = document.querySelector("#timerBar"),
-  selected = document.querySelector("#selected");
+  selected = document.querySelector("#selected"),
+  restartBtn = document.querySelector("#restartIcon");
 
 let timer,
   maxTime = 15,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0),
   aboutToggle = true,
-  isPlaying = true;
+  isPlaying = true,
+  pracIsSelected = true,
+  multiIsSelected = false,
+  setIsSelected = false,
+  abtIsSelected = false;
 
-multiplayerBtn.addEventListener("click", () => {
-  isPlaying = false;
-  multiplayer.style.display = "block";
-  aboutPage.style.display = "none";
-  document.getElementById("keyboard").style.display = "none";
-  document.getElementById("quoteSection").style.display = "none";
-  document.getElementById("results").style.display = "none";
+restartBtn.addEventListener("click", () => {
+  resetGame();
+})
 
-  selected.style.marginLeft = "122px";
-  multiplayerBtn.style.color = "black";
-  practiceBtn.style.color = "#ababab";
-  selected.style.width = "145px";
-  practiceBtn.style.cursor = "pointer";
-  multiplayerBtn.style.cursor = "default";
+practiceBtn.addEventListener("mouseover", () => {
+  if (!pracIsSelected) {
+    practiceBtn.style.color = "var(--main-color)";
+  }
 });
 
-aboutBtn.addEventListener("click", () => {
-  isPlaying = false;
-  aboutPage.style.display = "block";
-  multiplayer.style.display = "none";
-  document.getElementById("keyboard").style.display = "none";
-  document.getElementById("quoteSection").style.display = "none";
-  document.getElementById("results").style.display = "none";
-  document.getElementById("track").style.display = "none";
+practiceBtn.addEventListener("mouseout", () => {
+  if (!pracIsSelected) {
+    practiceBtn.style.color = "#ababab";
+  }
+});
+
+multiplayerBtn.addEventListener("mouseover", () => {
+  if (!multiIsSelected) {
+    multiplayerBtn.style.color = "var(--main-color)";
+  }
+});
+
+multiplayerBtn.addEventListener("mouseout", () => {
+  if (!multiIsSelected) {
+    multiplayerBtn.style.color = "#ababab";
+  }
+});
+
+settingsBtn.addEventListener("mouseover", () => {
+  if (!setIsSelected) {
+    settingsBtn.style.color = "var(--main-color)";
+  }
+});
+
+settingsBtn.addEventListener("mouseout", () => {
+  if (!setIsSelected) {
+    settingsBtn.style.color = "#ababab";
+  }
+});
+
+aboutBtn.addEventListener("mouseover", () => {
+  if (!abtIsSelected) {
+    aboutBtn.style.color = "var(--main-color)";
+  }
+});
+
+aboutBtn.addEventListener("mouseout", () => {
+  if (!abtIsSelected) {
+    aboutBtn.style.color = "#ababab";
+  }
 });
 
 practiceBtn.addEventListener("click", () => {
+  pracIsSelected = true;
+  multiIsSelected = false;
+  setIsSelected = false;
+  abtIsSelected = false;
   isPlaying = true;
+
   multiplayer.style.display = "none";
   aboutPage.style.display = "none";
   document.getElementById("keyboard").style.display = "block";
@@ -56,13 +93,102 @@ practiceBtn.addEventListener("click", () => {
   document.getElementById("switchTheme").style.display = "block";
 
   selected.style.marginLeft = "8px";
+  selected.style.width = "125px";
+
   multiplayerBtn.style.color = "#ababab";
   practiceBtn.style.color = "var(--secondary-color)";
-  selected.style.width = "125px";
+  settingsBtn.style.color = "#ababab";
+  aboutBtn.style.color = "#ababab";
+
   practiceBtn.style.cursor = "default";
   multiplayerBtn.style.cursor = "pointer";
+  aboutBtn.style.cursor = "pointer";
+  settingsBtn.style.cursor = "pointer";
 
   resetGame();
+});
+
+multiplayerBtn.addEventListener("click", () => {
+  pracIsSelected = false;
+  multiIsSelected = true;
+  setIsSelected = false;
+  abtIsSelected = false;
+  isPlaying = false;
+
+  multiplayer.style.display = "block";
+  aboutPage.style.display = "none";
+  document.getElementById("keyboard").style.display = "none";
+  document.getElementById("quoteSection").style.display = "none";
+  document.getElementById("results").style.display = "none";
+
+  selected.style.marginLeft = "122px";
+  selected.style.width = "145px";
+
+  practiceBtn.style.color = "#ababab";
+  multiplayerBtn.style.color = "black";
+  aboutBtn.style.color = "#ababab";
+  settingsBtn.style.color = "#ababab";
+
+  practiceBtn.style.cursor = "pointer";
+  multiplayerBtn.style.cursor = "default";
+  aboutBtn.style.cursor = "pointer";
+  settingsBtn.style.cursor = "pointer";
+});
+
+settingsBtn.addEventListener("click", () => {
+  pracIsSelected = false;
+  multiIsSelected = false;
+  setIsSelected = true;
+  abtIsSelected = false;
+  isPlaying = false;
+
+  aboutPage.style.display = "none";
+  multiplayer.style.display = "none";
+  document.getElementById("keyboard").style.display = "none";
+  document.getElementById("quoteSection").style.display = "none";
+  document.getElementById("results").style.display = "none";
+
+  // bar slider
+  selected.style.marginLeft = "259px";
+  selected.style.width = "125px";
+
+  practiceBtn.style.color = "#ababab";
+  multiplayerBtn.style.color = "#ababab";
+  settingsBtn.style.color = "black";
+  aboutBtn.style.color = "#ababab";
+
+  practiceBtn.style.cursor = "pointer";
+  multiplayerBtn.style.cursor = "pointer";
+  settingsBtn.style.cursor = "default";
+  aboutBtn.style.cursor = "pointer";
+});
+
+aboutBtn.addEventListener("click", () => {
+  pracIsSelected = false
+  multiIsSelected = false
+  setIsSelected = false
+  abtIsSelected = true
+  isPlaying = false;
+  aboutPage.style.display = "block";
+  multiplayer.style.display = "none";
+  document.getElementById("keyboard").style.display = "none";
+  document.getElementById("quoteSection").style.display = "none";
+  document.getElementById("results").style.display = "none";
+
+  // bar slider
+  selected.style.marginLeft = "381px";
+
+  aboutBtn.style.color = "black";
+  practiceBtn.style.color = "#ababab";
+  multiplayerBtn.style.color = "#ababab";
+  settingsBtn.style.color = "#ababab";
+
+  selected.style.width = "100px";
+
+  practiceBtn.style.cursor = "pointer";
+  multiplayerBtn.style.cursor = "pointer";
+  aboutBtn.style.cursor = "default";
+  settingsBtn.style.cursor = "pointer";
 });
 
 function loadParagraphs() {
