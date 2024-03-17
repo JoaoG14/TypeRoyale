@@ -1,4 +1,4 @@
-const paragraphs = [
+let paragraphs = [
   "impose grasp bet gang venomous background among junk animated dial ruby dome tomatoes bewildered greedy oatmeal same gray appear wheel include numerous nude entertainment ",
 "baboon brothers graveyard beat umbrella handler harness rubber block special between true organization fake stitch enchanting flag rust resemble agenda oceanic subway also curve",
 "dependent curb creeper bitterness spend gargoyle stew roof rabid bent witness somber story colorful bottom justify abrupt abundant recondite acidic shear skinny curious retreat ",
@@ -13,3 +13,16 @@ const paragraphs = [
 "rage smile earsplitting region box original distort flatness nasty weep robot nightmare achiever degrader bloodstain chase bench ablaze brood silly blouse delicacy exquisite"
 ];
 
+async function asyncCall() {
+  console.log('calling');
+  const result = await fetch("https://random-word-api.herokuapp.com/word?number=53");
+  const data = await result.json();
+  console.log(data);
+  console.log(data.join(" "))
+  paragraphs = [data.join(" ")]
+  return result;
+}
+
+asyncCall();
+
+console.log(data);
