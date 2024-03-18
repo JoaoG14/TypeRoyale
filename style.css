@@ -55,6 +55,33 @@ main {
   zoom: 90%; /* Webkit browsers */
 }
 
+/* loading spinner */
+
+#loading-bar-spinner.spinner {
+  left: 50%;
+  margin-left: -20px;
+  top: 37.2%;
+  margin-top: -20px;
+  position: absolute;
+  
+  animation: loading-bar-spinner 400ms linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+  width: 40px;
+  height: 40px;
+  border:  solid 4px transparent;
+  border-top-color:  #525252 !important;
+  border-left-color: #525252 !important;
+  border-radius: 50%;
+}
+
+@keyframes loading-bar-spinner {
+0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+
 li,
 a {
   font-weight: 400;
@@ -258,6 +285,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 160px;
 }
 
 .container {

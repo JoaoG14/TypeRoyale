@@ -208,7 +208,7 @@ async function loadParagraphs() {
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
 
-  typingText.innerHTML = "loading...";
+  typingText.innerHTML = `<div id="loading-bar-spinner" class="spinner"><div class="spinner-icon"></div></div>`;
 
   await getWords();
 
