@@ -372,6 +372,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
+
 .content button {
   outline: none;
   border: none;
@@ -484,12 +485,10 @@ u.result-details {
   margin: 0;
 }
 
-#typingViewf {
-  width: 900px;
-}
+
 
 .wrapper {
-  width: 1000px;
+  width: 2000px;
 }
 
 .result-details {

@@ -191,13 +191,24 @@ aboutBtn.addEventListener("click", () => {
   settingsBtn.style.cursor = "pointer";
 });
 
-function loadParagraphs() {
+let paragraphs = ["oi"];
+
+async function getWords() {
+  const result = await fetch("https://random-word-api.herokuapp.com/word?number=18");
+  const data = await result.json();
+  paragraphs = [data.join(" ")]
+  return data.join(" ");
+}
+
+async function loadParagraphs() {
   let spaceCounter = 0;
   document.getElementById("results").style.display = "none";
 
   document.getElementById("keyboard").style.display = "block";
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
+
+  await getWords();
 
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
   typingText.innerHTML = "";
@@ -206,7 +217,7 @@ function loadParagraphs() {
     if (char === " ") {
       spaceCounter++;
     }
-    if (spaceCounter > 7) {
+    if (spaceCounter > 5) {
       typingText.innerHTML += `<br>`;
       spaceCounter = 0;
     }
