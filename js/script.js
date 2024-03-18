@@ -208,6 +208,8 @@ async function loadParagraphs() {
   document.getElementById("quoteSection").style.display = "flex";
   document.getElementById("switchTheme").style.display = "block";
 
+  typingText.innerHTML = "loading...";
+
   await getWords();
 
   const ranIndex = Math.floor(Math.random() * paragraphs.length);
