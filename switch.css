@@ -67,7 +67,7 @@
   position: relative;
   width: 560px;
   height: 54px;
-  background-color: var(--secondary-color);
+  background-color: var(--nav-bar);
   border-radius: 999px;
   /* justify-content: space-between; */
   display: flex;
@@ -76,7 +76,7 @@
 
 #selected {
   z-index: 1;
-  color: var(--main-color);
+  background-color: #d9d9d9;
   height: 38px;
   width: 125px;
   border-radius: 999px;
@@ -88,7 +88,7 @@
 
 #prac {
   z-index: 2;
-  color: var(--secondary-color);
+  color: #070707;
   /* cursor: pointer; */
   font-size: 14px;
   margin: 30px;

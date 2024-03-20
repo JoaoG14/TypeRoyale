@@ -33,7 +33,7 @@ restartBtn.addEventListener("click", () => {
 
 practiceBtn.addEventListener("mouseover", () => {
   if (!pracIsSelected) {
-    practiceBtn.style.color = "var(--main-color)";
+    practiceBtn.style.color = "#d9d9d9";
   }
 });
 
@@ -45,7 +45,7 @@ practiceBtn.addEventListener("mouseout", () => {
 
 multiplayerBtn.addEventListener("mouseover", () => {
   if (!multiIsSelected) {
-    multiplayerBtn.style.color = "var(--main-color)";
+    multiplayerBtn.style.color = "#d9d9d9";
   }
 });
 
@@ -57,7 +57,7 @@ multiplayerBtn.addEventListener("mouseout", () => {
 
 settingsBtn.addEventListener("mouseover", () => {
   if (!setIsSelected) {
-    settingsBtn.style.color = "var(--main-color)";
+    settingsBtn.style.color = "#d9d9d9";
   }
 });
 
@@ -69,7 +69,7 @@ settingsBtn.addEventListener("mouseout", () => {
 
 aboutBtn.addEventListener("mouseover", () => {
   if (!abtIsSelected) {
-    aboutBtn.style.color = "var(--main-color)";
+    aboutBtn.style.color = "#d9d9d9";
   }
 });
 
@@ -96,7 +96,7 @@ practiceBtn.addEventListener("click", () => {
   selected.style.width = "125px";
 
   multiplayerBtn.style.color = "#ababab";
-  practiceBtn.style.color = "var(--secondary-color)";
+  practiceBtn.style.color = "#070707";
   settingsBtn.style.color = "#ababab";
   aboutBtn.style.color = "#ababab";
 

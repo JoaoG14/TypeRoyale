@@ -27,6 +27,7 @@
   --track-color: #212121;
   --multiplayer-color: #929090;
   --wpm-tag: #d6d6d6;
+  --nav-bar: #1E1E1E;
 }
 
 .light {
@@ -42,6 +43,7 @@
   --track-color: #5b5b5b;
   --multiplayer-color: #e2e2e2;
   --wpm-tag: #535353;
+  --nav-bar: #070707;
 }
 
 
@@ -763,7 +765,7 @@ img {
 #switchTheme button {
   width: 14px;
   height: 14px;
-  background-color: var(--secondary-color);
+  background-color: #1e1e1e;
   border: 0;
   border-radius: 999px;
   margin-left: 3px;
@@ -789,7 +791,7 @@ img {
 
   border-radius: 9999px;
 
-  background: var(--main-color);
+  background: #d9d9d9;
 }
 
 #switchText {
