@@ -12,7 +12,7 @@ const typingText = document.querySelector(".typing-text p"),
   aboutBtn = document.querySelector("#abt"),
   settingsBtn = document.querySelector("#set"),
   settingsBar = document.querySelector("#switchModeWrapper"),
-  timerBar = document.querySelector("#timerBar"),
+  timeBar = document.querySelector("#timeBar"),
   selected = document.querySelector("#selected"),
   restartBtn = document.querySelector("#restartIcon");
 
@@ -235,6 +235,9 @@ async function loadParagraphs() {
 function initTyping() {
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
+
+  timeBar.style.width = "50%"
+
   if (charIndex < characters.length - 1 && timeLeft > 0) {
     if (!isTyping) {
       timer = setInterval(initTimer, 1000);

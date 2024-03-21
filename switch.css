@@ -135,3 +135,13 @@
   background-color: #1b1b1b;
   margin-left: 40px;
 }
+
+
+#timeBar {
+  display: block;
+  height: 25px;
+  max-width: 100%;
+  background-color: black;
+  transition: all 15s ease 0s;
+  color: black;
+}
