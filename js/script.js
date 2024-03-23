@@ -29,7 +29,7 @@ let timer,
 
 restartBtn.addEventListener("click", () => {
   resetGame();
-})
+});
 
 practiceBtn.addEventListener("mouseover", () => {
   if (!pracIsSelected) {
@@ -164,10 +164,10 @@ settingsBtn.addEventListener("click", () => {
 });
 
 aboutBtn.addEventListener("click", () => {
-  pracIsSelected = false
-  multiIsSelected = false
-  setIsSelected = false
-  abtIsSelected = true
+  pracIsSelected = false;
+  multiIsSelected = false;
+  setIsSelected = false;
+  abtIsSelected = true;
   isPlaying = false;
   aboutPage.style.display = "block";
   multiplayer.style.display = "none";
@@ -194,9 +194,11 @@ aboutBtn.addEventListener("click", () => {
 let paragraphs = ["oi"];
 
 async function getWords() {
-  const result = await fetch("https://random-word-api.herokuapp.com/word?number=18");
+  const result = await fetch(
+    "https://random-word-api.herokuapp.com/word?number=18"
+  );
   const data = await result.json();
-  paragraphs = [data.join(" ")]
+  paragraphs = [data.join(" ")];
   return data.join(" ");
 }
 
@@ -235,8 +237,6 @@ async function loadParagraphs() {
 function initTyping() {
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
-
-  timeBar.style.width = "50%"
 
   if (charIndex < characters.length - 1 && timeLeft > 0) {
     if (!isTyping) {

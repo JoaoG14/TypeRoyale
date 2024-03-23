@@ -138,10 +138,10 @@
 
 
 #timeBar {
-  display: block;
+  display: none;
   height: 25px;
-  max-width: 100%;
+  width: 100vw;
   background-color: black;
-  transition: all 15s ease 0s;
   color: black;
+  transition: all 1s ease 0s;
 }
