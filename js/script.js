@@ -234,43 +234,54 @@ async function loadParagraphs() {
   typingText.addEventListener("click", () => inpField.focus());
 }
 
+let inputLength = 0;
+
 function initTyping() {
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
+  
 
   if (charIndex < characters.length - 1 && timeLeft > 0) {
     if (!isTyping) {
       timer = setInterval(initTimer, 1000);
       isTyping = true;
     }
-    if (typedChar == null) {
+    
+    if (typedChar === undefined) {
+      console.log(inpField.value.length)
+      console.log(inputLength)
+      console.log(inputLength - inpField.value.length)
       if (charIndex > 0) {
-        charIndex--;
+        let indexDecrease = inputLength - inpField.value.length
+        charIndex = charIndex - indexDecrease
         if (characters[charIndex].classList.contains("incorrect")) {
           mistakes--;
         }
         characters[charIndex].classList.remove("correct", "incorrect");
       }
+      inputLength = inpField.value.length
     } else {
       if (characters[charIndex].innerText == typedChar) {
         characters[charIndex].classList.add("correct");
+        inputLength++;
       } else {
         mistakes++;
         characters[charIndex].classList.add("incorrect");
+        inputLength++;
       }
       charIndex++;
     }
     characters.forEach((span) => span.classList.remove("active"));
     characters[charIndex].classList.add("active");
 
+    console.log(inpField.value)
+    
     let wpm = Math.round(
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
     wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
 
     wpmTag.innerText = wpm;
-    mistakeTag.innerText = mistakes;
-    cpmTag.innerText = charIndex - mistakes;
   } else {
     clearInterval(timer);
     inpField.value = "";
@@ -279,17 +290,17 @@ function initTyping() {
     document.getElementById("quoteSection").style.display = "none";
 
     document.getElementById("results").style.display = "block";
+
+    inputLength = 0;
   }
 }
 
 function initTimer() {
   if (timeLeft > 0) {
     timeLeft--;
-    timeTag.innerText = timeLeft;
     let wpm = Math.round(
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
-    wpmTag.innerText = wpm;
   } else {
     clearInterval(timer);
   }
@@ -301,10 +312,7 @@ function resetGame() {
   timeLeft = maxTime;
   charIndex = mistakes = isTyping = 0;
   inpField.value = "";
-  timeTag.innerText = timeLeft;
-  wpmTag.innerText = 0;
-  mistakeTag.innerText = 0;
-  cpmTag.innerText = 0;
+  inputLength = 0;
 }
 
 loadParagraphs();
@@ -318,3 +326,4 @@ window.addEventListener("keyup", function (event) {
     }
   }
 });
+
