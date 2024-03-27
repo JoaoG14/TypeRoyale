@@ -344,9 +344,9 @@ textarea {
   
 }
 .wrapper .input-field {
-  /* opacity: 0; */
-  /* z-index: -999; */
-  /* position: absolute; */
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
 }
 .wrapper .content-box {
   padding: 5px 0px 0;

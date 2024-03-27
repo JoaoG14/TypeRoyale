@@ -227,7 +227,6 @@ async function loadParagraphs() {
     }
     let span = `<span>${char}</span>`;
     typingText.innerHTML += span;
-    console.log(spaceCounter);
   });
   typingText.querySelectorAll("span")[0].classList.add("active");
   document.addEventListener("keydown", () => inpField.focus());
@@ -239,27 +238,26 @@ let inputLength = 0;
 function initTyping() {
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
-  
 
   if (charIndex < characters.length - 1 && timeLeft > 0) {
     if (!isTyping) {
       timer = setInterval(initTimer, 1000);
       isTyping = true;
     }
-    
+
     if (typedChar === undefined) {
-      console.log(inpField.value.length)
-      console.log(inputLength)
-      console.log(inputLength - inpField.value.length)
       if (charIndex > 0) {
-        let indexDecrease = inputLength - inpField.value.length
-        charIndex = charIndex - indexDecrease
-        if (characters[charIndex].classList.contains("incorrect")) {
-          mistakes--;
+        let indexDecrease = inputLength - inpField.value.length;
+
+        for (let i = 0; i < indexDecrease; i++) {
+          charIndex--;
+          if (characters[charIndex].classList.contains("incorrect")) {
+            mistakes--;
+          }
+          characters[charIndex].classList.remove("correct", "incorrect");
         }
-        characters[charIndex].classList.remove("correct", "incorrect");
       }
-      inputLength = inpField.value.length
+      inputLength = inpField.value.length;
     } else {
       if (characters[charIndex].innerText == typedChar) {
         characters[charIndex].classList.add("correct");
@@ -274,8 +272,6 @@ function initTyping() {
     characters.forEach((span) => span.classList.remove("active"));
     characters[charIndex].classList.add("active");
 
-    console.log(inpField.value)
-    
     let wpm = Math.round(
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
@@ -326,4 +322,3 @@ window.addEventListener("keyup", function (event) {
     }
   }
 });
-
