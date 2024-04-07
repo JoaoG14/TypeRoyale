@@ -647,13 +647,12 @@ u.result-details {
   text-align: center;
 }
 
-/* #timerBar {
+#timerBar {
   height: 30px;
-  width: 2133px;
+  width: 100vw;
   color: black;
   background-color: #000000;
-  transition:  15s ;
-} */
+}
 
 .venturous {
   color: var(--solid-b-w);

@@ -12,9 +12,10 @@ const typingText = document.querySelector(".typing-text p"),
   aboutBtn = document.querySelector("#abt"),
   settingsBtn = document.querySelector("#set"),
   settingsBar = document.querySelector("#switchModeWrapper"),
-  timeBar = document.querySelector("#timeBar"),
+  timeBar = document.querySelector("#timerBar"),
   selected = document.querySelector("#selected"),
-  restartBtn = document.querySelector("#restartIcon");
+  restartBtn = document.querySelector("#restartIcon"),
+  timeDisplay = document.querySelector("#time-display")
 
 let timer,
   maxTime = 15,
@@ -202,7 +203,7 @@ async function getWords() {
   return data.join(" ");
 }
 
-async function loadParagraphs() {
+async function loadText() {
   let spaceCounter = 0;
   document.getElementById("results").style.display = "none";
 
@@ -234,8 +235,17 @@ async function loadParagraphs() {
 }
 
 let inputLength = 0;
+let tempTimeBar = 100
 
 function initTyping() {
+
+  timeBar.style.display = "block"
+  if (isTyping){}
+  setInterval(() => {
+    tempTimeBar = tempTimeBar - 0.001
+    timeBar.style.width = `${tempTimeBar}vw`
+  }, 5)
+  
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
 
@@ -245,10 +255,13 @@ function initTyping() {
       isTyping = true;
     }
 
+    // deleting functionality
+
     if (typedChar === undefined) {
       if (charIndex > 0) {
         let indexDecrease = inputLength - inpField.value.length;
 
+        // used for loop so it works with ctrl + backspace
         for (let i = 0; i < indexDecrease; i++) {
           charIndex--;
           if (characters[charIndex].classList.contains("incorrect")) {
@@ -294,24 +307,30 @@ function initTyping() {
 function initTimer() {
   if (timeLeft > 0) {
     timeLeft--;
+
     let wpm = Math.round(
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
+
+    timeDisplay.innerHTML = `${timeLeft}`
   } else {
     clearInterval(timer);
   }
 }
 
 function resetGame() {
-  loadParagraphs();
+  loadText();
   clearInterval(timer);
   timeLeft = maxTime;
   charIndex = mistakes = isTyping = 0;
   inpField.value = "";
   inputLength = 0;
+  timeBar.style.display = "none" 
+  timeBar.style.width = "100vw"
+  
 }
 
-loadParagraphs();
+loadText();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
 
