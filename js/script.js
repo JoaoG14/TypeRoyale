@@ -12,10 +12,10 @@ const typingText = document.querySelector(".typing-text p"),
   aboutBtn = document.querySelector("#abt"),
   settingsBtn = document.querySelector("#set"),
   settingsBar = document.querySelector("#switchModeWrapper"),
-  timeBar = document.querySelector("#timerBar"),
+  // timeBar = document.querySelector("#timerBar"),
   selected = document.querySelector("#selected"),
   restartBtn = document.querySelector("#restartIcon"),
-  timeDisplay = document.querySelector("#time-display")
+  timeDisplay = document.querySelector("#time-display");
 
 let timer,
   maxTime = 15,
@@ -235,17 +235,16 @@ async function loadText() {
 }
 
 let inputLength = 0;
-let tempTimeBar = 100
+// let tempTimeBar = 100;
 
 function initTyping() {
+  // timeBar.style.display = "block"
+  // if (isTyping){}
+  // setInterval(() => {
+  //   tempTimeBar = tempTimeBar - 0.001
+  //   timeBar.style.width = `${tempTimeBar}vw`
+  // }, 5)
 
-  timeBar.style.display = "block"
-  if (isTyping){}
-  setInterval(() => {
-    tempTimeBar = tempTimeBar - 0.001
-    timeBar.style.width = `${tempTimeBar}vw`
-  }, 5)
-  
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
 
@@ -312,7 +311,7 @@ function initTimer() {
       ((charIndex - mistakes) / 5 / (maxTime - timeLeft)) * 60
     );
 
-    timeDisplay.innerHTML = `${timeLeft}`
+    timeDisplay.innerHTML = `${timeLeft}`;
   } else {
     clearInterval(timer);
   }
@@ -325,9 +324,8 @@ function resetGame() {
   charIndex = mistakes = isTyping = 0;
   inpField.value = "";
   inputLength = 0;
-  timeBar.style.display = "none" 
-  timeBar.style.width = "100vw"
-  
+  // timeBar.style.display = "none";
+  // timeBar.style.width = "100vw";
 }
 
 loadText();
